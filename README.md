@@ -11,7 +11,7 @@ This is a React and Next.js-based [website](https://systemstraining.vercel.app) 
 
 ## Running Locally 💻
 
-- Clone this project, create env.local from .env and use;
+- Clone this project, import Firebase environment variables and use;
 ```bash
 npm run dev
 ```
