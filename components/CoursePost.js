@@ -16,7 +16,7 @@ import fetcher from '../lib/fetcher';
 
 const CoursePost = (frontMatter) => {
   const slug = frontMatter.__resourcePath
-  .replace('course\\', '')
+  //.replace('course\\', '') Add this on Windows
   .replace('.mdx', '');
   const { data } = useSWR(`/api/page-views?id=${slug}`, fetcher);
   const views = data?.total;
