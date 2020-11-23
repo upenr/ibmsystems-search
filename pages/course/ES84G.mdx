@@ -1,0 +1,93 @@
+---
+title: 'ES84G: Implementing RACF Security for CICS/ESA and CICS/TS'
+modality: 'CR'
+summary: 'This course is for security personnel and CICS support personnel responsible for designing, implementing, or administering RACF security for CICS Transaction Server systems.'
+image: '/static/images/power.jpg'
+brand: 'IBM Z - Mainframe'
+lastPublishedOn: '2019-08-14'
+firstCreatedOn: '2002-07-20'
+---
+# Table of Contents
+1.  [Short Summary](#short-summary)
+2.  [Duration](#duration-in-hours-)
+3.  [Content Description](#content-description)
+4.  [Objectives](#objectives)
+5.  [Agenda](#agenda)
+6.  [Audience](#audience)
+7.  [Skill Level](#skill-level)
+8.  [Labs?](#labs-)
+9.  [Keywords](#keywords)
+10. [Prerequisites](#prerequisites)
+11. [Enrollment](#enrollment)
+12. [Errata](#errata)
+13. [Follow-on Courses](#follow-on-courses)
+
+# Short Summary
+This course is for security personnel and CICS support personnel responsible for designing, implementing, or administering RACF security for CICS Transaction Server systems.
+
+# Duration in Hours ⌚
+36
+
+# Content Description
+<p>This course teaches you how to implement security for your CICS systems using RACF as the external security manager. The lecture material will first explain the implementation tasks for a single-region CICS system and then extend the scope to MRO- or ISC-connected multiregion CICS systems. In the classroom you will learn both the CICS and RACF definitions necessary to establish effective security controls for CICS. You will learn how to:</p>
+
+<ul>
+	<li>Protect CICS system resources so that CICS itself has access but other users, such as TSO users or batch jobs, are denied access.</li>
+	<li>Define CICS terminal users to RACF and restrict the CICS regions to which these users will be allowed to sign on.</li>
+	<li>Control access to individual CICS transactions.</li>
+	<li>Control access to CICS application resources accessed by these transactions.</li>
+	<li>Control execution of CICS system programmer interface (SPI) commands used within transactions.</li>
+	<li>Control access to installation-defined resources used to support application-specific security requirements.</li>
+	<li>Control access to CICS transactions and resources when two or more CICS address spaces are connected to enable use of the CICS transaction routing and function-shipping mechanisms.</li>
+</ul>
+
+<p>You will learn about the wide variety of mechanisms that can be used to initiate transactions within CICS and the techniques for imposing security controls on each of these mechanisms. These mechanisms include the connections to CICS using Advanced Program-to-Program Communication (APPC) either from CICS client or server products on other platforms or from other products that support APPC. You will also explore the security interface between CICS, RACF, and DB2 and learn how RACF can be used to secure CICSplex System Manager, one of the elements provided with CICS Transaction Server for z/OS.</p>
+
+<p>You will have many opportunities to apply what you have learned in the classroom with hands-on lab exercises in which you actually set up the definitions in both CICS and RACF. The hands-on lab begins with exercises where you will familiarize yourself with the CICS and RACF lab environment. In the lab exercises you start with a CICS address space that has no security. First, you will protect your CICS region resources. In subsequent lab exercises, you will set up user sign-on security, protect transactions, and set up resource-level security and SPI command security. In the last lab exercise, you establish security between a terminal-owning region (TOR) and an MRO-connected application-owning region (AOR).</p>
+
+# Objectives
+<ul>
+	<li>Identify the tasks that must be done in RACF and CICS to implement security</li>
+	<li>Develop a step-by-step plan to implement RACF security on your CICS systems</li>
+	<li>Implement RACF-based security for CICS systems in single-system and CICS intercommunication (MRO and ISC) environments</li>
+	<li>Make the definitions in RACF and CICS to protect transactions, CICS resources, and SPI commands</li>
+	<li>Protect CICS system resources so that CICS itself has access but others, such as TSO users or batch jobs, are denied access</li>
+	<li>Define CICS terminal users to RACF and restrict the CICS regions to which these users are allowed to sign on</li>
+	<li>Control access to individual CICS transactions, CICS application resources accessed by these transactions, CICS SPI commands used within transactions, and installation-defined resources used to support application-specific security requirements</li>
+	<li>Use RACF to secure access to CICS from other platforms through Advanced Program-to-Program Communication (APPC) connections</li>
+	<li>Identify the key areas to secure for CICSPlex System Manager</li>
+</ul>
+
+# Agenda
+<p><strong>Day 1</strong></p><ul><li>Welcome, course introduction, and administration</li><li>Unit 1 - CICS overview</li><li>Exercise 1 - CICS familiarization</li><li>Unit 2 - RACF overview</li><li>Exercise 2 - RACF familiarization</li></ul><p><strong>Day 2</strong></p><ul><li>Unit 2 lab review</li><li>Unit 3 - Protecting the CICS region</li><li>Exercise 3 - Protecting the CICS region</li><li>Unit 4 - Sign-on security</li><li>Exercise 4 - Sign-on security</li></ul><p><strong>Day 3</strong></p><ul><li>Unit 5 - Transaction security</li><li>Exercise 5 - Transaction security</li><li>Unit 6 - CICS resource and SPI command security</li><li>Exercise 6 - CICS resource security and SPI command security</li></ul><p><strong>Day 4</strong></p><ul><li>Unit 7 - CICS intercommunication bind and link security</li><li>Unit 8 - CICS intercommunication conversation security</li></ul><p><strong>Day 5</strong></p><ul><li>Lab Review</li><li>Unit 9 - Securing CICSPlex SM</li><li>Unit 10 - Planning for implementation</li><li>Unit 11 - CICS and DB2 security</li><li>Unit 12 - CICS Web Services security</li></ul>
+
+# Audience
+<p>This course is for security personnel and CICS support personnel responsible for designing, implementing, or administering RACF security for CICS Transaction Server systems.</p>
+
+# Skill Level
+Intermediate
+
+# Labs? 💻
+No
+
+# Keywords
+CICS;RACFoverview;CICSregion;zos;ES84G;ES84;MBI00
+
+# Prerequisites
+<p>You should be familiar either with:</p>
+
+<ul>
+	<li>RACF (perhaps as a security administrator) <strong>or</strong> with CICS (perhaps as a member of your CICS technical support staff).</li>
+</ul>
+
+<p>It is not assumed or necessary that you already be familiar with both RACF <strong>and</strong> CICS.</p>
+
+# Enrollment
+https://www.ibm.com/training/course/ES84G
+
+# Errata
+None specified.
+
+# Follow-on Courses
+None specified.
+
