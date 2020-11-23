@@ -1,9 +1,7 @@
 import React from 'react';
-import IframeResizer from 'iframe-resizer-react';
 import { parseISO, format } from 'date-fns';
-import { BiShareAlt } from 'react-icons/Bi';
+import { BiShareAlt } from 'react-icons/bi';
 import { FaClipboard, FaClipboardCheck } from 'react-icons/fa';
-import { BsClipboard } from 'react-icons/bs';
 import {
   useColorMode,
   Heading,
