@@ -2,6 +2,8 @@
 .DS_Store
 .next
 node_modules
+.env
+*.env
 .env.*
 public/sitemap.xml
 .mdx-data
