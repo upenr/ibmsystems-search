@@ -64,15 +64,8 @@ const About = () => {
           Conquer the most demanding IT workloads with IBM Systems' servers and
           storage.
         </Text>
-        <Stack
-          as="main"
-          justifyContent="center"
-          align="center"
-          m="0 auto"
-          maxWidth="100%"
-        >
-          <Flex
-            flexDirection="row"
+        <Flex
+            direction={["column", "row"]}
             justifyContent="center"
             alignItems="center"
             maxWidth="100%"
@@ -199,7 +192,6 @@ const About = () => {
               </Box>
             </Link>
           </Flex>
-        </Stack>
         <Heading letterSpacing="tight" mb={4} mt={16} as="h2" size="xl">
           IBM Systems Training
         </Heading>

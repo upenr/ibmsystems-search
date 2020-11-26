@@ -9,16 +9,12 @@ import {
   Flex,
   Stack,
   Avatar,
-  Button,
   Link,
   Icon,
   IconButton,
   useClipboard,
   useToast,
-  Divider,
-  Spacer,
-  createStandaloneToast,
-  Box
+  Divider
 } from '@chakra-ui/react';
 import {
   TwitterShareButton,
@@ -65,111 +61,118 @@ export default function BlogLayout({ children, frontMatter }) {
   };
 
   return (
-    <Container>
+    <>
       <CourseSeo
         url={`https://systemstraining.vercel.app/course/${slug}`}
         {...frontMatter}
       />
-      <Stack
-        as="article"
-        spacing={8}
-        justifyContent="space-between"
-        alignItems="space-between"
-        m="0 auto 4rem auto"
-        maxWidth="850px"
-        w="100%"
-      >
+      <Container>
         <Flex
-          flexDirection="row"
-          justifyContent="space-between"
+          flexDirection="column"
+          justifyContent="center"
           alignItems="center"
-          maxWidth="850px"
-          w="100%"
-          mt={2}
+          mt={0}
+          mb={4}
         >
-          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-            {frontMatter.title}
-          </Heading>
-        </Flex>
-        <Flex
-          justify="space-between"
-          align={['initial', 'center']}
-          direction={['column', 'row']}
-          mt={2}
-          mb={0}
-        >
-          <Flex align="center" mt={4} mb={4}>
-            <Avatar size="sm" name="Systems Training" src="" mr={2} />
-            <Link
-              href="https://twitter.com/IBMTraining"
-              target="_blank"
-              fontSize="sm"
-              color={textColor[colorMode]}
-              mr={1}
-            >
-              {frontMatter.by}
-              {'IBM Systems Training'}
-            </Link>
-            <Text fontSize="sm">
-              {'on '}
-              {format(parseISO(frontMatter.lastPublishedOn), 'MMMM dd, yyyy')}
-            </Text>
+          <Flex
+            align="flex-start"
+            direction="column"
+            alignItems="flex-start"
+            maxWidth="850px"
+            m="0 auto"
+            mt={2}
+          >
+            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+              {frontMatter.title}
+            </Heading>
 
-            <Flex ml={6}>
-              <TwitterShareButton
-                url={thisUrl(slug)}
-                title={frontMatter.title}
-                hashtags={['IBMSystems', 'IBMTraining']}
-              >
-                <TwitterIcon size={24} round={true} />
-              </TwitterShareButton>
-              &nbsp;&nbsp;
-              <FacebookShareButton
-                url={thisUrl(slug)}
-                quote={frontMatter.title}
-                hashtag="IBMSystems"
-              >
-                <FacebookIcon size={24} round={true} />
-              </FacebookShareButton>
-              &nbsp;&nbsp;
-              <IconButton
-                size="xs"
-                rounded="full"
-                bg="teal.500"
+            <Flex
+              justify="flex-start"
+              align={['initial', 'center']}
+              direction="row"
+              alignItems="center"
+              mt={8}
+              mb={0}
+            >
+              <Avatar
+                align="center"
+                size="sm"
+                name="Systems Training"
+                src=""
                 mr={2}
-                onClick={handleCopy}
-                icon={hasCopied ? <FaClipboardCheck /> : <BiShareAlt />}
               />
+              <Link
+                href="https://twitter.com/IBMTraining"
+                target="_blank"
+                align="center"
+                fontSize="sm"
+                color={textColor[colorMode]}
+                mr="1"
+              >
+                {frontMatter.by}
+                {'IBM Systems Training'}
+              </Link>
+              <Text color="gray.500" fontSize="sm">
+                {'on '}
+                {format(parseISO(frontMatter.lastPublishedOn), 'MMMM dd, yyyy')}
+              </Text>
+
+              <Flex ml={6} align="center">
+                <TwitterShareButton
+                  url={thisUrl(slug)}
+                  title={frontMatter.title}
+                  hashtags={['IBMSystems', 'IBMTraining']}
+                >
+                  <TwitterIcon size={24} round={true} />
+                </TwitterShareButton>
+                &nbsp;&nbsp;
+                <FacebookShareButton
+                  url={thisUrl(slug)}
+                  quote={frontMatter.title}
+                  hashtag="IBMSystems"
+                >
+                  <FacebookIcon size={24} round={true} />
+                </FacebookShareButton>
+                &nbsp;&nbsp;
+                <IconButton
+                  size="xs"
+                  rounded="full"
+                  bg="teal.500"
+                  onClick={handleCopy}
+                  icon={hasCopied ? <FaClipboardCheck /> : <BiShareAlt />}
+                />
+                &nbsp;&nbsp;
+              </Flex>
+              <Flex ml={6} align="center">
+                <Text color="gray.500" mr={4} fontSize="sm" minWidth="100px">
+                  {` • `}
+                  {frontMatter.readingTime.text}
+                </Text>
+                <Text color="gray.500" fontSize="sm" minWidth="100px">
+                  {` • `}
+                  <ViewCounter id={slug} />
+                </Text>
+              </Flex>
+            </Flex>
+            <Divider mt="0" mt="4" mb="4" orientation="horizontal" />
+            <Flex
+              flexDirection="column"
+              justifyContent="flex-start"
+              alignItems="flex-start"
+              w="100%"
+              mt={8}
+              mb={8}
+            >
+              {children}
             </Flex>
           </Flex>
-
-          <Text fontSize="sm" minWidth="100px">
-            {` • `}
-            {frontMatter.readingTime.text}
-          </Text>
-
-          <Text fontSize="sm" minWidth="100px">
-            {` • `}
-            <ViewCounter id={slug} />
-          </Text>
-        </Flex>
-        <Divider mt="0" width="97%" mb="4" orientation="horizontal" />
-
-        {children}
-        <Stack
-          as="main"
-          justifyContent="center"
-          align="center"
-          m="0 auto"
-          w="100%"
-        >
-          <Divider mt="16" mb="8" width="100%" orientation="horizontal" />
+          <Divider mt="8" mb="8" orientation="horizontal" />
           <Flex
-            flexDirection="row"
+            direction={['column', 'row']}
             justifyContent="center"
             alignItems="center"
-            maxWidth="100%"
             mt={4}
+            mb={24}
           >
             <TwitterShareButton
               url={thisUrl(slug)}
@@ -204,10 +207,8 @@ export default function BlogLayout({ children, frontMatter }) {
               {'View on IBM website'}
             </Link>
           </Flex>
-        </Stack>
-      </Stack>
-      <br />
-      <br />
-    </Container>
+        </Flex>
+      </Container>
+    </>
   );
 }

@@ -22,7 +22,7 @@ const StickyNav = styled(Flex)`
   position: sticky;
   z-index: 0;
   top: 0;
-  backdrop-filter: saturate(100%) blur(5px);
+  backdrop-filter: saturate(100%) blur(0px);
   transition: background-color 0.2 ease-in-out;
 `;
 
@@ -48,14 +48,11 @@ const Container = ({ children }) => {
   return (
     <>
       <StickyNav
-        flexDirection="row"
+        direction="row"
         justifyContent="space-between"
         alignItems="flex-end"
         as="nav"
-        p={0}
-        mt={[0, 0]}
         mb={8}
-        mx={0}
       >
         <Flex justifyContent="flex-start" alignItems="flex-start">
           <Tooltip label="Dark Mode Toggle" placement="bottom">
@@ -70,29 +67,30 @@ const Container = ({ children }) => {
           {/* <myIcons.BookIcon boxSize={8} ml='4' mt='1' /> */}
           {/* <Avatar bg="white.500" name="IBM Systems Training" src="/static/images/logo.png" /> */}
         </Flex>
-
-        <Box>
-          <NextLink href="/course/Submission" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
-              Submit
-            </Button>
-          </NextLink>
-          <NextLink href="/course" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
-              Courses
-            </Button>
-          </NextLink>
-          <NextLink href="/about" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
-              About
-            </Button>
-          </NextLink>
-          <NextLink href="/" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
-              Home
-            </Button>
-          </NextLink>
-        </Box>
+        <Flex justifyContent="flex-end" alignItems="flex-end">
+          <Box>
+            <NextLink href="/course/Submission" passHref>
+              <Button as="a" variant="ghost" p={[1, 4]}>
+                Submit
+              </Button>
+            </NextLink>
+            <NextLink href="/course" passHref>
+              <Button as="a" variant="ghost" p={[1, 4]}>
+                Courses
+              </Button>
+            </NextLink>
+            <NextLink href="/about" passHref>
+              <Button as="a" variant="ghost" p={[1, 4]}>
+                About
+              </Button>
+            </NextLink>
+            <NextLink href="/" passHref>
+              <Button as="a" variant="ghost" p={[1, 4]}>
+                Home
+              </Button>
+            </NextLink>
+          </Box>
+        </Flex>
       </StickyNav>
       <Flex as="main" justifyContent="center" flexDirection="column" px={8}>
         {children}

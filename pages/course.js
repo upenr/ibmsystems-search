@@ -32,7 +32,7 @@ const description = 'IBM Systems Training Courses.';
 //let newSlugArray = [];
 
 const course = () => {
-/*console.log('courses1', courses1);
+  /*console.log('courses1', courses1);
   newSlugArray = courses1.map((title) => ({ title, views: 0 }));
   console.log('newSlugArray', newSlugArray); */
 
@@ -106,7 +106,7 @@ const course = () => {
               placeholder="Search"
               value={searchValue}
               autoFocus
-              onFocus={e => e.currentTarget.select()}
+              onFocus={(e) => e.currentTarget.select()}
             />
             <InputRightElement>
               <IconButton
@@ -168,7 +168,7 @@ const course = () => {
             {filteredCoursePosts.map((frontMatter) => (
               <CoursePost
                 key={frontMatter.title + frontMatter.lastPublishedOn}
-                 handleSearch={(anyKey) => setSearchValue(anyKey)}
+                handleSearch={(anyKey) => setSearchValue(anyKey)}
                 {...frontMatter}
               />
             ))}
