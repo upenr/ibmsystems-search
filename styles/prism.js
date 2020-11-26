@@ -53,7 +53,7 @@ const prismBaseTheme = css`
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #ffc107;
+    color: slategray;
   }
   .token.punctuation {
     color: #999;
@@ -83,7 +83,7 @@ const prismBaseTheme = css`
   .token.url,
   .language-css .token.string,
   .style .token.string {
-    color: #4DB6AC;
+    color: #9a6e3a;
   }
   .token.atrule,
   .token.attr-value,
@@ -161,7 +161,7 @@ export const prismDarkTheme = css`
     background: #011627;
   }
   .token.attr-name {
-    color: rgb(0, 150, 136);
+    color: rgb(173, 219, 103);
     font-style: italic;
   }
   .token.comment {
@@ -169,7 +169,7 @@ export const prismDarkTheme = css`
   }
   .token.string,
   .token.url {
-    color: rgb(0, 150, 136);
+    color: rgb(173, 219, 103);
   }
   .token.variable {
     color: rgb(214, 222, 235);
@@ -184,11 +184,11 @@ export const prismDarkTheme = css`
     color: rgb(130, 170, 255);
   }
   .token.punctuation {
-    color: rgb(255, 193, 7);
+    color: rgb(199, 146, 234);
   }
   .token.selector,
   .token.doctype {
-    color: rgb(255, 193, 7);
+    color: rgb(199, 146, 234);
     font-style: 'italic';
   }
   .token.class-name {
@@ -197,7 +197,7 @@ export const prismDarkTheme = css`
   .token.tag,
   .token.operator,
   .token.keyword {
-    color: rgb(3, 169, 244);
+    color: #ffa7c4;
   }
   .token.boolean {
     color: rgb(255, 88, 116);

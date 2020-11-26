@@ -24,15 +24,17 @@ import {
 import Container from '../components/Container';
 import CoursePost from '../components/CoursePost';
 import { default as content, frontMatter as courses1 } from './course/*.mdx';
+import ViewCounter from '../components/ViewCounter';
 
 const url = 'https://systemstraining.vercel.app/course';
 const title = 'Courses: IBM Systems Training';
 const description = 'IBM Systems Training Courses.';
+//let newSlugArray = [];
 
 const course = () => {
-  //console.log('courses1', courses1);
-  //newSlugArray = courses1.map((title) => ({ title, views: views }));
-  //console.log('newSlugArray', newSlugArray);
+/*console.log('courses1', courses1);
+  newSlugArray = courses1.map((title) => ({ title, views: 0 }));
+  console.log('newSlugArray', newSlugArray); */
 
   const [searchValue, setSearchValue] = useState('');
   const { colorMode } = useColorMode();

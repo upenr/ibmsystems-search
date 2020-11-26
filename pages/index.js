@@ -21,7 +21,7 @@ const Index = () => {
   const { colorMode } = useColorMode();
   const textColor = {
     light: '#009688',
-    dark: '#009688'
+    dark: '#DDAF94'
   };
   const secondaryTextColor = {
     light: 'gray.800',

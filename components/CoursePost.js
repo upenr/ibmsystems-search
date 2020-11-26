@@ -16,7 +16,7 @@ import fetcher from '../lib/fetcher';
 
 const CoursePost = (frontMatter) => {
   const slug = frontMatter.__resourcePath
-  //.replace('course\\', '') Add this on Windows
+  .replace('course\\', '') //For Windows
   .replace('course/', '')
   .replace('.mdx', '');
   const { data } = useSWR(`/api/page-views?id=${slug}`, fetcher);
