@@ -1,16 +1,16 @@
 ---
-title: 'Submission Guidelines 🚀'
-modality: 'None'
-summary: 'An overview of how to submit course description content to this website. It covers all questions regarding the format of the content.'
-image: '/static/images/power.jpg'
-brand: 'General'
-lastPublishedOn: '2020-01-01'
-firstCreatedOn: '2020-01-01'
+title: "Submission Guidelines 🚀"
+modality: "None"
+summary: "An overview of how to submit course description content to this website. It covers all questions regarding the format of the content."
+image: "/static/images/power.jpg"
+brand: "General"
+lastPublishedOn: "2020-01-01"
+firstCreatedOn: "2020-01-01"
 ---
 # Welcome
 You can submit new courses to this website using this file format. [Download the file from here](https://ibm.box.com/s/fod9bpreggj0xjjxj0l9qnpxbtewpwkd) and edit it with your own course front matter. This link is only for IBMers.
 
-Here is a sample [input file](https://ibm.box.com/s/d4wshaohqmu67t8eyzqkhdmy3dnstyca) that generated this [output](/course/DL08021G) in this website. 
+Here is a sample [input file](https://ibm.box.com/s/d4wshaohqmu67t8eyzqkhdmy3dnstyca) that generated this [output](https://systemstraining.vercel.app/SSFS7DG) in this website. 
 
 The contents of this file are explained here in more detail. 
 
@@ -19,34 +19,35 @@ First, rename the file `COURSECODE.mdx` to reflect your actual course code. Caps
 
 # Sections 📑
 The file has two sections. 
-* First section within the `---` and `---` tags and;
-* Second section starting with `# Table of Contents` till the end of file
+* First section within the `---` and `---` tags, also known as the [Metadata section](#metadatasection), and;
+* Second section starting from `# Table of Contents` to the end of file
 
-The first section between `---` and `---` is the `metadata` section. Students can [search](https://systemstraining.vercel.app/course) the metadata content to find stuff they need.
+The <u>first section</u> between `---` and `---` is the `metadata` section. Students can [search](https://systemstraining.vercel.app/course) the metadata content to find stuff they need.
 
-The second section is just like a text file. You can enter anything you want there. However, a default format is shown in the file you downloaded above. This is just how all our courses' front matter currently look in the [website](https://systemstraining.vercel.app).
+The <u>second section</u> is just like a text file. You can enter ***any content*** you want here. However, a default format is shown in the file you downloaded above. This is just how all our courses' front matter currently look in the [website](https://systemstraining.vercel.app).
 
-# Metadata section 🏷️  <span style={{color: 'orange'}}></span>
+# <a name="metadatasection"></a>Metadata section 🏷️  <span style={{color: 'orange'}}></span>
 This is all the content you need to submit as metadata for your course.
 
-✔️ **Ensure that you do NOT enter the `'` (single quote) character anywhere within the `''` (single quotes) shown below. Most common errors would be words like `It's` or `What's`. It is best to write `It is` or `What is` instead in this section.** 
+✔️ **Ensure that you use `"` (double quotes) to wrap your values in the metadata section. An example is shown below:** 
 
 ```js:/COURSECODE.mdx
 ---
-title: 'Course Title'
-modality: 'WBT or SPVC or CR, ILO or other'
-summary: 'This will be searchable for the student. Ensure you enter all the keywords. Longer the better. Super long summaries will be trimmed to display on the front page, but the content will still be searchable.'
-image: '/static/images/power.jpg or /static/images/storage.jpg or /static/images/ibmz.jpg or send your own image'
-brand: 'Enter the brand name. Example: IBM Power Systems - Cognitive'
-lastPublishedOn: '2019-02-20'
-firstCreatedOn: '2017-12-13'
+title: "Course Title"
+modality: "WBT or SPVC or CR, ILO or other"
+summary: "This text will be searchable for the student. Ensure you enter all the keywords. Longer the better. Super long summaries will be trimmed to display on the front page, but the content will still be searchable. So, again, longer the better."
+image: "/static/images/power.jpg or /static/images/storage.jpg or /static/images/ibmz.jpg or send your own image"
+brand: "Enter the brand name. Example: IBM Power Systems - Cognitive or IBM Z"
+lastPublishedOn: "2019-02-20"
+firstCreatedOn: "2017-12-13"
 ---
 ```
 
-✔️ **The `date` format on `lastPublishedOn` and `firstCreatedOn` HAS to be **`YYYY-MM-DD`**. No other date format will work. This is because we use this format to sort posts. The latest published course will appear on top.**
+✔️ **The `date` format on `lastPublishedOn` and `firstCreatedOn` HAS to be **`YYYY-MM-DD`**. No other date format will work. This is because we use this format to sort posts. The latest published course will appear on top on our [website](https://systemstraining.vercel.app/course).**
 
 # Rest of the file 📄
 <h2> Table of Contents </h2>
+
 Descriptions of the sections are also explained here. The `# ` (with a space) signifies a heading. Some internal links in the `Table of Contents` are written with the `[]()` syntax with the headings specified within the `[]` and links within `()`. Refer to the example below:
 
 ```md
@@ -204,4 +205,4 @@ Here
 
 Here's a more detailed [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you'd like to learn more. 
 
-That's it for now. Thanks! 🚀
+That's it for now. Thanks! 🙏🏼
