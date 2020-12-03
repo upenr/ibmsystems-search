@@ -1,6 +1,10 @@
 import { MDXProvider } from '@mdx-js/react';
 import { DefaultSeo } from 'next-seo';
-import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react';
+import {
+  ChakraProvider,
+  ColorModeProvider,
+  useColorMode
+} from '@chakra-ui/react';
 import Head from 'next/head';
 import { Global, css } from '@emotion/react';
 import MDXComponents from '../components/MDXComponents';
@@ -38,7 +42,7 @@ const GlobalStyle = ({ children }) => {
 const App = ({ Component, pageProps }) => {
   return (
     <>
-    <DefaultSeo {...SEO} />
+      <DefaultSeo {...SEO} />
       <Head>
         <link
           rel="apple-touch-icon"
@@ -58,16 +62,20 @@ const App = ({ Component, pageProps }) => {
           href="/static/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/static/favicons/site.webmanifest" />
-		<link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <link
+          rel="mask-icon"
+          href="/static/favicons/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <ChakraProvider>
-      <MDXProvider components={MDXComponents}>
+        <MDXProvider components={MDXComponents}>
           <GlobalStyle>
             <Component {...pageProps} />
           </GlobalStyle>
-      </MDXProvider>
+        </MDXProvider>
       </ChakraProvider>
     </>
   );

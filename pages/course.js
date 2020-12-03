@@ -24,7 +24,6 @@ import {
 import Container from '../components/Container';
 import CoursePost from '../components/CoursePost';
 import { default as content, frontMatter as courses1 } from './course/*.mdx';
-import ViewCounter from '../components/ViewCounter';
 
 const url = 'https://systemstraining.vercel.app/course';
 const title = 'Courses: IBM Systems Training';
@@ -35,6 +34,14 @@ const course = () => {
   /*console.log('courses1', courses1);
   newSlugArray = courses1.map((title) => ({ title, views: 0 }));
   console.log('newSlugArray', newSlugArray); */
+  const props = [
+    'summary',
+    'title',
+    'modality',
+    'brand',
+    'lastPublishedOn',
+    'firstCreatedOn'
+  ];
 
   const [searchValue, setSearchValue] = useState('');
   const { colorMode } = useColorMode();
@@ -54,28 +61,32 @@ const course = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const filteredCoursePosts = courses1
-    .sort(
-      (a, b) => {
-        if (new Date(a.lastPublishedOn) < new Date(b.lastPublishedOn)) {
-          return 1;
-        }
-        if (new Date(a.lastPublishedOn) > new Date(b.lastPublishedOn)) {
-          return -1;
-        }
-        // a must be equal to b
-        return 0;
+    .sort((a, b) => {
+      if (new Date(a.lastPublishedOn) < new Date(b.lastPublishedOn)) {
+        return 1;
       }
-      //Number(new Date(b.lastPublishedOn)) > Number(new Date(a.lastPublishedOn)) ? 1 : -1
-    )
+      if (new Date(a.lastPublishedOn) > new Date(b.lastPublishedOn)) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    })
     .filter((frontMatter) => {
-      const concat =
-        frontMatter.summary +
-        frontMatter.title +
-        frontMatter.modality +
-        frontMatter.brand +
-        frontMatter.lastPublishedOn +
-        frontMatter.firstCreatedOn;
-      return concat.toLowerCase().includes(searchValue.toLowerCase());
+      const concat = [
+        frontMatter.summary,
+        frontMatter.title,
+        frontMatter.modality,
+        frontMatter.brand,
+        frontMatter.lastPublishedOn,
+        frontMatter.firstCreatedOn
+      ].join(' ');
+
+      let allMatches = true;
+      searchValue
+        .toLowerCase()
+        .split(' ')
+        .forEach((val) => (allMatches &&= concat.toLowerCase().includes(val)));
+      return allMatches;
     });
 
   return (

@@ -65,133 +65,133 @@ const About = () => {
           storage.
         </Text>
         <Flex
-            direction={["column", "row"]}
-            justifyContent="center"
-            alignItems="center"
-            maxWidth="100%"
-            mt={4}
+          direction={['column', 'row']}
+          justifyContent="center"
+          alignItems="center"
+          maxWidth="100%"
+          mt={4}
+        >
+          <Link
+            href="https://www.ibm.com/it-infrastructure/servers"
+            _hover={{ textDecoration: 'none' }}
+            isExternal
           >
-            <Link
-              href="https://www.ibm.com/it-infrastructure/servers"
-              _hover={{ textDecoration: 'none' }}
-              isExternal
+            <Box
+              maxW="sm"
+              borderWidth="1px"
+              rounded="lg"
+              overflow="hidden"
+              mr={10}
             >
-              <Box
-                maxW="sm"
-                borderWidth="1px"
-                rounded="lg"
-                overflow="hidden"
-                mr={10}
-              >
-                <Image src={property1.imageUrl} alt={property1.imageAlt} />
+              <Image src={property1.imageUrl} alt={property1.imageAlt} />
 
-                <Box p="6">
-                  <Box d="flex" alignItems="baseline">
-                    <Badge
-                      _hover={{ bg: 'yellow.100' }}
-                      _focus={{ boxShadow: 'outline' }}
-                      textTransform="capitalcase"
-                      rounded="full"
-                      px="2"
-                      fontSize="sm"
-                      letterSpacing="tight"
-                      colorScheme="blue"
-                    >
-                      IBM Systems
-                    </Badge>
-                  </Box>
-                  <Box
-                    mt="1"
-                    ml="2"
-                    fontWeight="semibold"
-                    as="h4"
-                    lineHeight="tight"
-                    isTruncated
+              <Box p="6">
+                <Box d="flex" alignItems="baseline">
+                  <Badge
+                    _hover={{ bg: 'yellow.100' }}
+                    _focus={{ boxShadow: 'outline' }}
+                    textTransform="capitalcase"
+                    rounded="full"
+                    px="2"
+                    fontSize="sm"
+                    letterSpacing="tight"
+                    colorScheme="blue"
                   >
-                    {property1.title}
-                  </Box>
+                    IBM Systems
+                  </Badge>
+                </Box>
+                <Box
+                  mt="1"
+                  ml="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                >
+                  {property1.title}
                 </Box>
               </Box>
-            </Link>
-            <Link
-              href="https://www.ibm.com/it-infrastructure/storage"
-              _hover={{ textDecoration: 'none' }}
-              isExternal
+            </Box>
+          </Link>
+          <Link
+            href="https://www.ibm.com/it-infrastructure/storage"
+            _hover={{ textDecoration: 'none' }}
+            isExternal
+          >
+            <Box
+              maxW="sm"
+              borderWidth="1px"
+              rounded="lg"
+              overflow="hidden"
+              mr={10}
             >
-              <Box
-                maxW="sm"
-                borderWidth="1px"
-                rounded="lg"
-                overflow="hidden"
-                mr={10}
-              >
-                <Image src={property2.imageUrl} alt={property2.imageAlt} />
+              <Image src={property2.imageUrl} alt={property2.imageAlt} />
 
-                <Box p="6">
-                  <Box d="flex" alignItems="baseline">
-                    <Badge
-                      _hover={{ bg: 'yellow.100' }}
-                      _focus={{ boxShadow: 'outline' }}
-                      textTransform="capitalcase"
-                      rounded="full"
-                      px="2"
-                      fontSize="sm"
-                      letterSpacing="tight"
-                      colorScheme="blue"
-                    >
-                      IBM Systems
-                    </Badge>
-                  </Box>
-                  <Box
-                    mt="1"
-                    ml="2"
-                    fontWeight="semibold"
-                    as="h4"
-                    lineHeight="tight"
-                    isTruncated
+              <Box p="6">
+                <Box d="flex" alignItems="baseline">
+                  <Badge
+                    _hover={{ bg: 'yellow.100' }}
+                    _focus={{ boxShadow: 'outline' }}
+                    textTransform="capitalcase"
+                    rounded="full"
+                    px="2"
+                    fontSize="sm"
+                    letterSpacing="tight"
+                    colorScheme="blue"
                   >
-                    {property2.title}
-                  </Box>
+                    IBM Systems
+                  </Badge>
+                </Box>
+                <Box
+                  mt="1"
+                  ml="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                >
+                  {property2.title}
                 </Box>
               </Box>
-            </Link>
-            <Link
-              href="https://www.ibm.com/it-infrastructure/servers"
-              _hover={{ textDecoration: 'none' }}
-              isExternal
-            >
-              <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
-                <Image src={property3.imageUrl} alt={property3.imageAlt} />
+            </Box>
+          </Link>
+          <Link
+            href="https://www.ibm.com/it-infrastructure/servers"
+            _hover={{ textDecoration: 'none' }}
+            isExternal
+          >
+            <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+              <Image src={property3.imageUrl} alt={property3.imageAlt} />
 
-                <Box p="6">
-                  <Box d="flex" alignItems="baseline">
-                    <Badge
-                      _hover={{ bg: 'yellow.100' }}
-                      _focus={{ boxShadow: 'outline' }}
-                      textTransform="capitalcase"
-                      rounded="full"
-                      px="2"
-                      fontSize="sm"
-                      letterSpacing="tight"
-                      colorScheme="blue"
-                    >
-                      IBM Systems
-                    </Badge>
-                  </Box>
-                  <Box
-                    mt="1"
-                    ml="2"
-                    fontWeight="semibold"
-                    as="h4"
-                    lineHeight="tight"
-                    isTruncated
+              <Box p="6">
+                <Box d="flex" alignItems="baseline">
+                  <Badge
+                    _hover={{ bg: 'yellow.100' }}
+                    _focus={{ boxShadow: 'outline' }}
+                    textTransform="capitalcase"
+                    rounded="full"
+                    px="2"
+                    fontSize="sm"
+                    letterSpacing="tight"
+                    colorScheme="blue"
                   >
-                    {property3.title}
-                  </Box>
+                    IBM Systems
+                  </Badge>
+                </Box>
+                <Box
+                  mt="1"
+                  ml="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                >
+                  {property3.title}
                 </Box>
               </Box>
-            </Link>
-          </Flex>
+            </Box>
+          </Link>
+        </Flex>
         <Heading letterSpacing="tight" mb={4} mt={16} as="h2" size="xl">
           IBM Systems Training
         </Heading>
@@ -226,8 +226,8 @@ const About = () => {
             Tweets
           </Heading>
           <a
-            autorefresh
-            class="twitter-timeline"
+            autorefresh="true"
+            className="twitter-timeline"
             color="blue.500"
             data-width="500"
             data-height="750"
@@ -241,7 +241,7 @@ const About = () => {
           <script
             async
             src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
+            charSet="utf-8"
           ></script>
           <br />
         </Flex>

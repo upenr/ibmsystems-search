@@ -29,6 +29,7 @@ import ViewCounter from '../components/ViewCounter';
 
 export default function BlogLayout({ children, frontMatter }) {
   const slug = frontMatter.__resourcePath
+    .replace('course\\', '') //For Windows
     .replace('course/', '')
     .replace('.mdx', '');
 
