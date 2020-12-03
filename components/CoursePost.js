@@ -16,9 +16,9 @@ import fetcher from '../lib/fetcher';
 
 const CoursePost = (frontMatter) => {
   const slug = frontMatter.__resourcePath
-  .replace('course\\', '') //For Windows
-  .replace('course/', '')
-  .replace('.mdx', '');
+    .replace('course\\', '') //For Windows
+    .replace('course/', '')
+    .replace('.mdx', '');
   const { data } = useSWR(`/api/page-views?id=${slug}`, fetcher);
   const views = data?.total;
 
@@ -47,10 +47,10 @@ const CoursePost = (frontMatter) => {
   const { incrementData } = useSWR(`/api/increment-views?id=${slug}`, fetcher);
   console.log('views', views + ' ' + slug);
   */
-  
-  const scrollSearch = myKey => {
+
+  const scrollSearch = (myKey) => {
     window.scrollTo(0, 0);
-    frontMatter.handleSearch(myKey)
+    frontMatter.handleSearch('"' + myKey + '"');
   };
 
   const tooltipText = (modality) => {
