@@ -22,7 +22,7 @@ const prettier = require('prettier');
                 const route = path === '/index' ? '' : path;
                 return `
                         <url>
-                            <loc>${`${route}`}</loc>
+                            <loc>${`https://upenr.vercel.app${route}`}</loc>
                         </url>
                     `;
               })

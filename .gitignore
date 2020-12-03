@@ -5,9 +5,9 @@ node_modules
 .env
 *.env
 .env.*
-public/sitemap.xml
 .mdx-data
 .now
 service-account.json
 MainBook.xlsx
 *.bak
+/bfg-1.13.0.jar
