@@ -22,7 +22,7 @@ const StickyNav = styled(Flex)`
   position: sticky;
   z-index: 0;
   top: 0;
-  backdrop-filter: saturate(100%) blur(0px);
+  backdrop-filter: saturate(100%) blur(5px);
   transition: background-color 0.2 ease-in-out;
 `;
 

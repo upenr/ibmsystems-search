@@ -8,6 +8,7 @@ const prettier = require('prettier');
   const pages = await globby([
     'pages/**/*{.js,.mdx}',
     '!pages/_*.js',
+	'!pages/404.js',
     '!pages/api'
   ]);
   const sitemap = `
@@ -19,7 +20,7 @@ const prettier = require('prettier');
                   .replace('pages', '')
                   .replace('.js', '')
                   .replace('.mdx', '');
-                const route = path === '/index' ? '' : path;
+                const route = path === '/index' ? '/' : path;
                 return `
                         <url>
                             <loc>${`https://upenr.vercel.app${route}`}</loc>
