@@ -163,7 +163,7 @@ const Index = () => {
               icon={myIcons.CourseraIcon}
             />
             <ProjectCard
-              title="Linux and Private Cloud Administration on IBM Power Systems Specialization (To be published)"
+              title="Linux and Private Cloud Administration on IBM Power Systems Specialization"
               description="This specialization introduces Red Hat Enterprise Linux system administration and private cloud capabilities of IBM Systems. IBM Power servers will be used to demonstrate these concepts. Through three courses, you will learn a range of concepts from how to get started with Linux, to using Linux in a large cloud environment. Brought to you by IBM!"
               href="https://www.coursera.org/specializations/linux-private-cloud-administration-power-systems"
               icon={myIcons.CourseraIcon}
