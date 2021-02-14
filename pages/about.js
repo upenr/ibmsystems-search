@@ -61,8 +61,9 @@ const About = () => {
           About Us
         </Heading>
         <Text color={secondaryTextColor[colorMode]} mb={4}>
-          Conquer the most demanding IT workloads with IBM Systems' servers and
-          storage.
+          Welcome. This website has pre-rendered pages and fast search. We're
+          part of IBM Systems.<br></br>Conquer the most demanding IT workloads
+          with IBM Systems' servers and storage.
         </Text>
         <Flex
           direction={['column', 'row']}

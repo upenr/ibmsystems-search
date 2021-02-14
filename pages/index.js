@@ -6,8 +6,10 @@ import {
   Heading,
   Text,
   Flex,
+  Image,
+  Link,
   Stack,
-  Button,
+  Button
 } from '@chakra-ui/react';
 import * as myIcons from '../styles/newtheme';
 import { NextSeo } from 'next-seo';
@@ -46,24 +48,37 @@ const Index = () => {
           alignItems="center"
           maxWidth="100%"
           mb="40"
-          mt="40"
+          mt="10"
         >
-          <Stack spacing={2}>
-            <Heading
-              textAlign="center"
-              letterSpacing="tight"
-              as="h2"
-              size="2xl"
-              m="0 auto"
+          <Stack spacing={0}>
+            <Flex
+              align="center"
+              flexDirection="row"
+              justifyContent="center"
+              alignItems="center"
+              maxWidth="100%"
             >
-              <Text as="span" color={textColor[colorMode]}>
-                IBM Systems Training
-              </Text>{' '}
-              course search
-            </Heading>
-            <Text align="center" fontSize="sm">
-              Welcome. This is a website with pre-rendered pages and fast search.
-            </Text>
+              <Link href="/Course">
+                <Image
+                  rounded="full"
+                  boxSize="200px"
+                  src="/static/images/itoperations.png"
+                  alt="IT training image"
+                  mr="8"
+                />
+              </Link>
+              <Heading
+                textAlign="center"
+                letterSpacing="tight"
+                as="h2"
+                size="2xl"
+              >
+                <Text as="span" color={textColor[colorMode]}>
+                  IBM Systems Training
+                </Text>{' '}
+                course search
+              </Heading>
+            </Flex>
             <Flex
               align="center"
               flexDirection="column"
@@ -79,11 +94,10 @@ const Index = () => {
                   align="center"
                   color={textColor[colorMode]}
                   colorScheme="gray"
-                  width="30%"
+                  width="35%"
                   size="lg"
-                  mt="4"
                 >
-                  Search
+                  Click to begin
                 </Button>
               </NextLink>
             </Flex>
