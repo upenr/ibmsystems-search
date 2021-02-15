@@ -1,6 +1,4 @@
 import React from 'react';
-import NextLink from 'next/link';
-import { SearchIcon } from '@chakra-ui/icons';
 import {
   useColorMode,
   Heading,
@@ -8,12 +6,14 @@ import {
   Flex,
   Image,
   Link,
+  Box,
   Stack,
   Button
 } from '@chakra-ui/react';
 import * as myIcons from '../styles/newtheme';
 import { NextSeo } from 'next-seo';
 import Container from '../components/Container';
+import HeaderCard from '../components/HeaderCard';
 import ProjectCard from '../components/ProjectCard';
 
 const url = 'https://systemstraining.vercel.app';
@@ -48,60 +48,13 @@ const Index = () => {
           alignItems="center"
           maxWidth="100%"
           mb="40"
-          mt="10"
+          mt="20"
         >
-          <Stack spacing={0}>
-            <Flex
-              align="center"
-              flexDirection="row"
-              justifyContent="center"
-              alignItems="center"
-              maxWidth="100%"
-            >
-              <Link href="/Course">
-                <Image
-                  rounded="full"
-                  boxSize="200px"
-                  src="/static/images/itoperations.png"
-                  alt="IT training image"
-                  mr="8"
-                />
-              </Link>
-              <Heading
-                textAlign="center"
-                letterSpacing="tight"
-                as="h2"
-                size="2xl"
-              >
-                <Text as="span" color={textColor[colorMode]}>
-                  IBM Systems Training
-                </Text>{' '}
-                course search
-              </Heading>
-            </Flex>
-            <Flex
-              align="center"
-              flexDirection="column"
-              justifyContent="center"
-              alignItems="center"
-              maxWidth="100%"
-              mb="4"
-              mt="4"
-            >
-              <NextLink href="/course" passHref>
-                <Button
-                  leftIcon={<SearchIcon />}
-                  align="center"
-                  color={textColor[colorMode]}
-                  colorScheme="gray"
-                  width="35%"
-                  size="lg"
-                >
-                  Click to begin
-                </Button>
-              </NextLink>
-            </Flex>
-          </Stack>
+          <HeaderCard
+            title="IBM Systems Training Course Search"
+            href="/course"
+            buttonText="Click to begin"
+          />
         </Flex>
         <Stack
           as="main"
