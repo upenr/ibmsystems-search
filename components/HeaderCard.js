@@ -64,7 +64,6 @@ const HeaderCard = ({ title, href, buttonText }) => {
           >
             {title}
           </Heading>
-          <NextLink href="/course" passHref>
             <Button
               leftIcon={<SearchIcon />}
               align="center"
@@ -76,7 +75,6 @@ const HeaderCard = ({ title, href, buttonText }) => {
             >
               {buttonText}
             </Button>
-          </NextLink>
         </Stack>
       </Flex>
     </Link>
