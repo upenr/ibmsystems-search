@@ -72,7 +72,7 @@ const Index = () => {
             mt={8}
             mb={8}
           >
-            <Heading letterSpacing="tight" mb={8} as="h2" size="xl">
+            <Heading letterSpacing="tight" mt={5} mb={8} as="h2" size="xl">
               Most popular
             </Heading>
             <ProjectCard

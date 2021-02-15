@@ -1,5 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
+import Image from 'next/image';
 import { SearchIcon } from '@chakra-ui/icons';
 import {
   Flex,
@@ -8,7 +9,6 @@ import {
   Text,
   Stack,
   Icon,
-  Image,
   Button,
   useColorMode
 } from '@chakra-ui/react';
@@ -49,13 +49,12 @@ const HeaderCard = ({ title, href, buttonText }) => {
         p={4}
       >
         <Image
-          rounded="full"
-          boxSize="150px"
+          priority="true"
           src="/static/images/itoperations.png"
-          alt="IT training image"
-          mr="8"
+          width={160}
+          height={160}
         />
-        <Stack>
+        <Stack align="center" ml={6}>
           <Heading
             as="h2"
             size="2xl"
@@ -72,6 +71,8 @@ const HeaderCard = ({ title, href, buttonText }) => {
               color={textColor[colorMode]}
               colorScheme="gray"
               size="lg"
+              height="48px"
+              width="100%"
             >
               {buttonText}
             </Button>
