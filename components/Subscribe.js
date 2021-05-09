@@ -18,11 +18,11 @@ const Subscribe = () => {
   const { colorMode } = useColorMode();
   const bgColor = {
     light: 'orange.50',
-    dark: 'blue.900'
+    dark: 'blue.800'
   };
   const borderColor = {
     light: 'orange.200',
-    dark: 'blue.900'
+    dark: 'blue.800'
   };
 
   const subscribe = async (e) => {
