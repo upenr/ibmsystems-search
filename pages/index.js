@@ -15,6 +15,7 @@ import { NextSeo } from 'next-seo';
 import Container from '../components/Container';
 import HeaderCard from '../components/HeaderCard';
 import ProjectCard from '../components/ProjectCard';
+import Subscribe from '../components/Subscribe';
 
 const url = 'https://systemstraining.vercel.app';
 const title = 'Home: IBM Systems Training Search';
@@ -137,6 +138,17 @@ const Index = () => {
             />
           </Flex>
         </Stack>
+        <Flex
+          align="center"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          maxWidth="100%"
+          mb="10"
+          mt="0"
+        >
+          <Subscribe />
+        </Flex>
       </Container>
     </>
   );
