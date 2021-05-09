@@ -1,5 +1,8 @@
-import React, { useRef } from 'react';
-import fetch from 'isomorphic-unfetch';
+import { useState, useRef } from 'react';
+import Link from 'next/link';
+import useSWR from 'swr';
+import format from 'comma-number';
+
 import {
   Heading,
   InputGroup,
@@ -12,17 +15,22 @@ import {
   useColorMode
 } from '@chakra-ui/react';
 
-const Subscribe = () => {
+import fetcher from '../lib/fetcher';
+
+export default function Subscribe() {
+  const [form, setForm] = useState(false);
+  const { data } = useSWR('/api/subscribers', fetcher);
+  const subscriberCount = format(data?.count);
   const inputEl = useRef(null);
   const toast = useToast();
   const { colorMode } = useColorMode();
   const bgColor = {
-    light: 'orange.50',
-    dark: 'blue.800'
+    light: 'twitter.50',
+    dark: 'black.800'
   };
   const borderColor = {
-    light: 'orange.200',
-    dark: 'blue.800'
+    light: 'twitter.800',
+    dark: 'twitter.800'
   };
 
   const subscribe = async (e) => {
@@ -55,7 +63,7 @@ const Subscribe = () => {
     inputEl.current.value = '';
     toast({
       title: 'Success!',
-      description: 'You are now subscribed.',
+      description: 'Check your email to confirm the subscription.',
       status: 'success',
       duration: 3000,
       isClosable: true
@@ -72,12 +80,10 @@ const Subscribe = () => {
       my={4}
     >
       <Heading as="h5" size="lg" mb={2}>
-        Subscribe to our newsletter
+        Subscribe to the newsletter
       </Heading>
-      <Text>
-        You won't hear from us unless there are significant updates.
-      </Text>
-      <InputGroup size="md" mt={4}>
+      <Text>You won't hear from us unless there are significant updates.</Text>
+      <InputGroup size="md" mt={4} mb={4}>
         <Input
           aria-label="Email for newsletter"
           placeholder="xyz@abc.com"
@@ -90,8 +96,7 @@ const Subscribe = () => {
           </Button>
         </InputRightElement>
       </InputGroup>
+      <Text fontSize="md">Current subscribers: {`${subscriberCount || '-'}`}</Text>
     </Box>
   );
-};
-
-export default Subscribe;
+}
