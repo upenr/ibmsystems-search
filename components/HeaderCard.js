@@ -64,17 +64,17 @@ const HeaderCard = ({ title, href, buttonText }) => {
           >
             {title}
           </Heading>
-            <Button
-              leftIcon={<SearchIcon />}
-              align="center"
-              color={textColor[colorMode]}
-              colorScheme="gray"
-              size="lg"
-              height="48px"
-              width="100%"
-            >
-              {buttonText}
-            </Button>
+          <Button
+            leftIcon={<SearchIcon />}
+            align="center"
+            color={textColor[colorMode]}
+            colorScheme="gray"
+            size="lg"
+            height="48px"
+            width="100%"
+          >
+            {buttonText}
+          </Button>
         </Stack>
       </Flex>
     </Link>

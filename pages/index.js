@@ -7,6 +7,7 @@ import {
   Image,
   Link,
   Box,
+  Icon,
   Stack,
   Button
 } from '@chakra-ui/react';
@@ -70,10 +71,23 @@ const Index = () => {
             justifyContent="flex-start"
             alignItems="flex-start"
             maxWidth="100%"
-            mt={8}
-            mb={8}
+            mt={0}
+            mb={0}
           >
             <Heading letterSpacing="tight" mt={5} mb={8} as="h2" size="xl">
+              Subscribe
+             <Icon
+            aria-label="LinkedIn"
+            as= {myIcons.bellIcon}
+            boxSize="64px"
+            ml={2}
+            mr={4}
+          />
+            </Heading>
+           
+              <Subscribe />
+            
+            <Heading letterSpacing="tight" mt={8} mb={8} as="h2" size="xl">
               Most popular
             </Heading>
             <ProjectCard
@@ -138,17 +152,6 @@ const Index = () => {
             />
           </Flex>
         </Stack>
-        <Flex
-          align="center"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          maxWidth="100%"
-          mb="10"
-          mt="0"
-        >
-          <Subscribe />
-        </Flex>
       </Container>
     </>
   );
