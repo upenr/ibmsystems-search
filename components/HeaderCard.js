@@ -55,8 +55,8 @@ const HeaderCard = ({ title, href, buttonText }) => {
         <Image
           priority="true"
           src="/static/images/itoperations.png"
-          width={160}
-          height={160}
+          width={180}
+          height={180}
         />
         <Stack align="center" ml={6}>
           <Heading
@@ -70,7 +70,6 @@ const HeaderCard = ({ title, href, buttonText }) => {
                 as="span"
                 bgGradient="linear(to-r, #24C6DC, #514A9D)"
                 bgClip="text"
-                fontSize="6xl"
                 fontWeight="bold"
               >
             {title}
