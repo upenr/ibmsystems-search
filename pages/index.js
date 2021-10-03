@@ -138,16 +138,16 @@ const Index = () => {
             <Heading letterSpacing="tight" mb={8} as="h2" size="xl">
               We're also on Coursera!
             </Heading>
+			<ProjectCard
+              title="Linux and Private Cloud Administration on IBM Power Specialization"
+              description="This specialization introduces Red Hat Enterprise Linux system administration and private cloud capabilities of IBM Systems. IBM Power servers will be used to demonstrate these concepts. Through three courses, you will learn a range of concepts from how to get started with Linux, to using Linux in a large cloud environment. Brought to you by IBM!"
+              href="https://www.coursera.org/specializations/linux-private-cloud-administration-power-systems"
+              icon={myIcons.CourseraIcon}
+            />
             <ProjectCard
               title="IBM z/OS Mainframe Practitioner Professional Certificate"
               description="In this series of courses, the learner will be introduced to various operating systems, mainframe applications, and get real-time hands-on experience on an IBM Z server. The skills acquired on completion of this Professional Certificate allows the learner to pursue a career as a mainframe application developer, system programmer, system administrator, or a DBA Practitioner."
               href="https://www.coursera.org/professional-certificates/ibm-z-mainframe"
-              icon={myIcons.CourseraIcon}
-            />
-            <ProjectCard
-              title="Linux and Private Cloud Administration on IBM Power Systems Specialization"
-              description="This specialization introduces Red Hat Enterprise Linux system administration and private cloud capabilities of IBM Systems. IBM Power servers will be used to demonstrate these concepts. Through three courses, you will learn a range of concepts from how to get started with Linux, to using Linux in a large cloud environment. Brought to you by IBM!"
-              href="https://www.coursera.org/specializations/linux-private-cloud-administration-power-systems"
               icon={myIcons.CourseraIcon}
             />
           </Flex>
