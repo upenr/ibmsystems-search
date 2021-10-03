@@ -59,6 +59,8 @@ const CoursePost = (frontMatter) => {
         return 'Classroom';
       case 'CR, ILO':
         return 'Classroom, Instructor-led Online';
+      case 'CR,ILO':
+        return 'Classroom, Instructor-led Online';
       case 'WBT':
         return 'Web-based Training';
       case 'SPVC':

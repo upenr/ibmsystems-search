@@ -7,7 +7,8 @@ node_modules
 .env.*
 .mdx-data
 .now
+*.xlsx
 service-account.json
-MainBook.xlsx
+*.ini
 *.bak
 /bfg-1.13.0.jar

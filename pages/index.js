@@ -76,17 +76,17 @@ const Index = () => {
           >
             <Heading letterSpacing="tight" mt={5} mb={8} as="h2" size="xl">
               Subscribe
-             <Icon
-            aria-label="LinkedIn"
-            as= {myIcons.bellIcon}
-            boxSize="64px"
-            ml={2}
-            mr={4}
-          />
+              <Icon
+                aria-label="LinkedIn"
+                as={myIcons.bellIcon}
+                boxSize="64px"
+                ml={2}
+                mr={4}
+              />
             </Heading>
-           
-              <Subscribe />
-            
+
+            <Subscribe />
+
             <Heading letterSpacing="tight" mt={8} mb={8} as="h2" size="xl">
               Most popular
             </Heading>
