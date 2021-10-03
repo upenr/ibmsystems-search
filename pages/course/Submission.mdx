@@ -1,0 +1,207 @@
+---
+title: 'Submission Guidelines 🚀'
+modality: 'None'
+summary: 'An overview of how to submit course description content to this website. It covers all questions regarding the format of the content.'
+image: '/static/images/power.jpg'
+brand: 'General'
+lastPublishedOn: '2020-01-01'
+firstCreatedOn: '2020-01-01'
+---
+# Welcome
+You can submit new courses to this website using this file format. [Download the file from here](https://ibm.box.com/s/fod9bpreggj0xjjxj0l9qnpxbtewpwkd) and edit it with your own course front matter. This link is only for IBMers.
+
+Here is a sample [input file](https://ibm.box.com/s/d4wshaohqmu67t8eyzqkhdmy3dnstyca) that generated this [output](/course/DL08021G) in this website. 
+
+The contents of this file are explained here in more detail. 
+
+# Filename
+First, rename the file `COURSECODE.mdx` to reflect your actual course code. Caps in the filename is preferred, but not required.
+
+# Sections 📑
+The file has two sections. 
+* First section within the `---` and `---` tags and;
+* Second section starting with `# Table of Contents` till the end of file
+
+The first section between `---` and `---` is the `metadata` section. Students can [search](https://systemstraining.vercel.app/course) the metadata content to find stuff they need.
+
+The second section is just like a text file. You can enter anything you want there. However, a default format is shown in the file you downloaded above. This is just how all our courses' front matter currently look in the [website](https://systemstraining.vercel.app).
+
+# Metadata section 🏷️  <span style={{color: 'orange'}}></span>
+This is all the content you need to submit as metadata for your course.
+
+✔️ **Ensure that you do NOT enter the `'` (single quote) character anywhere within the `''` (single quotes) shown below. Most common errors would be words like `It's` or `What's`. It is best to write `It is` or `What is` instead in this section.** 
+
+```js:/COURSECODE.mdx
+---
+title: 'Course Title'
+modality: 'WBT or SPVC or CR, ILO or other'
+summary: 'This will be searchable for the student. Ensure you enter all the keywords. Longer the better. Super long summaries will be trimmed to display on the front page, but the content will still be searchable.'
+image: '/static/images/power.jpg or /static/images/storage.jpg or /static/images/ibmz.jpg or send your own image'
+brand: 'Enter the brand name. Example: IBM Power Systems - Cognitive'
+lastPublishedOn: '2019-02-20'
+firstCreatedOn: '2017-12-13'
+---
+```
+
+✔️ **The `date` format on `lastPublishedOn` and `firstCreatedOn` HAS to be **`YYYY-MM-DD`**. No other date format will work. This is because we use this format to sort posts. The latest published course will appear on top.**
+
+# Rest of the file 📄
+<h2> Table of Contents </h2>
+Descriptions of the sections are also explained here. The `# ` (with a space) signifies a heading. Some internal links in the `Table of Contents` are written with the `[]()` syntax with the headings specified within the `[]` and links within `()`. Refer to the example below:
+
+```md
+# Table of Contents
+1.  [Short Summary](#short-summary)
+2.  [Duration](#duration-in-hours-)
+3.  [Content Description](#content-description)
+4.  [Objectives](#objectives)
+5.  [Agenda](#agenda)
+6.  [Audience](#audience)
+7.  [Skill Level](#skill-level)
+8.  [Labs?](#labs-)
+9.  [Keywords](#keywords)
+10. [Prerequisites](#prerequisites)
+11. [Enrollment](#enrollment)
+12. [Errata](#errata)
+13. [Follow-on Courses](#follow-on-courses)
+```
+This renders as:<br/>
+![Rendered bullets and link](/static/images/submission/toc.png)
+<h2> Short Summary </h2>
+
+We then have the `Short Summary` section. Enter the same thing that you entered in the `summary` tag so the student can read it too.
+
+**You are allowed to enter special characters from here to the end of the file.**
+
+```md
+# Short Summary
+The `title` and `summary` tags above will be searchable from the `/Courses` front page. So, it's essential that you include all the keywords related to the course here. This specific section is a repeat of the `summary` tag information. It needs to be manually entered here in order for the student to read it. 
+```
+<h2> Duration in Hours </h2>
+
+Enter your duration (in hours) here. It's just text. No quotes or punctuation needed. For example: `4`.
+The ⌚ emoji is optional here. The presence of this emoji is the reason why there is an extra `-` in the Table of Contents link for this section. If you don't want to have the emoji in your file, remove the extra `-` in the (#duration-in-hours`-`) link in Table of Contents.
+
+```md
+# Duration in Hours ⌚
+Here
+```
+<h2> Content Description </h2>
+
+Enter your full description for the course here. It's just text. Any length is accepted. You can use bullet points (with * as shown below in the `Objectives` section), numbered lists, tables, emojis, anything really.
+
+```md
+# Content Description
+Here
+```
+<h2> Objectives </h2>
+
+```md
+# Objectives
+HTML or Markdown based objectives. For example;
+* First Objective
+	* Sub-first Objective
+* Second Objective
+* And so on
+* Or you could use the HTML `<ul>`, `<li>` or other tags
+* It could also be a numbered list. Just follow this [cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md) for more ways to format your content. 
+```
+This renders as:<br/>
+![Rendered bullets and link](/static/images/submission/objectives.png)
+<h2> Agenda </h2>
+
+```md
+# Agenda
+HTML or Markdown based Agenda. For example;
+* First Agenda Item, example Day 1.
+	* Sub-first Objective
+* Second Objective
+* And so on
+* Or you could use the HTML `<ul>`, `<li>` or other tags
+```
+This renders as:<br/>
+![Rendered bullets and link](/static/images/submission/agenda.png)
+<h2> Audience </h2>
+
+```md
+# Audience
+HTML or Markdown based Audience information. For example;
+Enrollment in this course is not restricted. Typical students may include:
+*   Clients
+*   Business Partners
+*   IBMers
+*   Students or young professionals
+```
+This renders as:<br/>
+![Rendered bullets and link](/static/images/submission/audience.png)
+<h2> Skill Level </h2>
+
+Enter the course skill level. It's just text. For example: Basic or intermediate or advanced or any other.
+
+```md
+# Skill Level
+Here
+```
+<h2> Labs? </h2>
+
+This is intended to let the student know if this course contains any labs. It's just text. For example: Yes or No.
+
+The 💻 emoji is optional here. The presence of this emoji is the reason why there is an extra `-` in the Table of Contents link for this section. If you don't want to have the emoji in your file, remove the extra `-` in the (#labs`-`) link in Table of Contents.
+
+```md
+# Labs? 💻
+Here
+```
+<h2> Keywords </h2>
+
+Enter the keywords separated by a `;` or `,`. For example: `keyword1;keyword2;keyword3;keyword4;keyword5;keyword6`.
+```md
+# Keywords
+Here
+```
+<h2> Prerequisites </h2>
+
+Enter HTML or Markdown based prerequisites information. The `*` and `tab` characters will add a bullet point in the output. For example:
+
+```md
+*	It's recommended that the student take XYZ before taking this course.
+```
+
+```md
+# Prerequisites
+Here
+```
+<h2> Enrollment </h2>
+
+Enter the link for the course. For example: `https://www.ibm.com/training/course/<Your_Course_Code_Here>`.
+
+```md
+# Enrollment
+Here
+```
+<h2> Errata </h2>
+
+HTML or Markdown based Errata if available. For example:
+None specified. (Keep this here if you don't have any Errata. This '`None specified.`' is just default text used in all courses.)
+or 
+enter your errata text here.
+
+```md
+# Errata
+Here
+```
+<h2> Follow-on Courses </h2>
+
+HTML or Markdown based follow-on courses if available. For example: 
+`None specified.` (This is the default)
+or 
+enter a list of follow-on courses here.
+
+```md
+# Follow-on Courses
+Here
+```
+
+Here's a more detailed [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you'd like to learn more. 
+
+That's it for now. Thanks! 🚀
