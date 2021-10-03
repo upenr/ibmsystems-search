@@ -55,7 +55,7 @@ const Index = () => {
           <HeaderCard
             title="IBM Systems Training Course Search"
             href="/course"
-            buttonText="Click to begin"
+            buttonText="Get started"
           />
         </Flex>
         <Stack
@@ -74,7 +74,7 @@ const Index = () => {
             mt={0}
             mb={0}
           >
-            <Heading letterSpacing="tight" mt={5} mb={8} as="h2" size="xl">
+            <Heading letterSpacing="tight" mt={5} mb={0} as="h2" size="xl">
               Subscribe
               <Icon
                 aria-label="LinkedIn"

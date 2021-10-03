@@ -27,6 +27,10 @@ const HeaderCard = ({ title, href, buttonText }) => {
     light: 'gray.200',
     dark: 'gray.600'
   };
+  const whiteTextColor = {
+    light: '#ffffff',
+    dark: '#ffffff'
+  };
   const iconColor = {
     light: 'gray.1000',
     dark: 'white'
@@ -62,16 +66,27 @@ const HeaderCard = ({ title, href, buttonText }) => {
             mb={4}
             letterSpacing="tighter"
           >
+            <Text
+                as="span"
+                bgGradient="linear(to-r, #24C6DC, #514A9D)"
+                bgClip="text"
+                fontSize="6xl"
+                fontWeight="bold"
+              >
             {title}
+            </Text>
           </Heading>
           <Button
             leftIcon={<SearchIcon />}
             align="center"
-            color={textColor[colorMode]}
-            colorScheme="gray"
+            color={whiteTextColor[colorMode]}
             size="lg"
             height="48px"
-            width="100%"
+            width="50%"
+            bgGradient="linear(to-r, #24C6DC, #514A9D)"
+                  _hover={{
+                    bgGradient: 'linear(to-r, red.500, yellow.500)'
+                  }}
           >
             {buttonText}
           </Button>

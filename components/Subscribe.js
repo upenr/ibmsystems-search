@@ -25,7 +25,7 @@ export default function Subscribe() {
   const toast = useToast();
   const { colorMode } = useColorMode();
   const bgColor = {
-    light: 'twitter.50',
+    light: 'white.100',
     dark: 'black.800'
   };
   const borderColor = {

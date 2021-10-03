@@ -34,7 +34,7 @@ const About = () => {
   const property1 = {
     imageUrl: '/static/images/power.jpeg',
     imageAlt: 'IBM Power Systems server',
-    title: 'IBM Power Systems'
+    title: 'IBM Power'
   };
   const property2 = {
     imageUrl: '/static/images/storage.jpeg',
@@ -61,8 +61,11 @@ const About = () => {
           About Us
         </Heading>
         <Text color={secondaryTextColor[colorMode]} mb={4}>
-          Welcome. This website has pre-rendered pages and fast search. We're
-          part of IBM Systems.<br></br>Conquer the most demanding IT workloads
+          Welcome. Use this website to quickly <Link
+            href="/course"
+            color="blue.500"
+          >search</Link> for IBM Systems courses. We're
+          part of IBM Systems. Conquer the most demanding IT workloads
           with IBM Systems' servers and storage.
         </Text>
         <Flex
@@ -233,10 +236,10 @@ const About = () => {
             data-width="500"
             data-height="750"
             data-theme="dark"
-            href="https://twitter.com/IBMTraining?ref_src=twsrc%5Etfw"
+            href="https://twitter.com/__upen"
           >
             <Link color="blue.500" title="tweets" href="/about">
-              Refresh the page to see Tweets by IBM Training
+              Refresh the page to see my tweets
             </Link>
           </a>{' '}
           <script
