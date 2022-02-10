@@ -103,6 +103,18 @@ const Index = () => {
                 href="/course/QZC50G"
                 icon={myIcons.AnsibleIcon}
               />
+			   <ProjectCard
+                title="SS01DG: Introduction to Storage"
+                description="This fundamentals course covers the basics of getting started with IBM Storage. It describes data protection and high availability features. It then goes into the concepts of storage virtualization and introduces the IBM Spectrum suite of Software-defined storage products. All our disk, flash and tape products are covered. And finally, it covers our networking solutions and introduces the idea of cloud computing as it relates to storage. "
+                href="/course/SS01DG"
+                icon={myIcons.StorageIcon}
+              />
+			  <ProjectCard
+                title="SSFS1DG: IBM FlashSystem Fundamentals"
+                description="This course covers the basics of flash storage systems and our portfolio in this area, including IBM Spectrum Virtualize, IBM SAN Volume Controller (SVC) and IBM FlashSystems."
+                href="/course/SSFS1DG"
+                icon={myIcons.StorageIcon}
+              />
               <ProjectCard
                 title="DL08015G: Introduction to IBM Storage and Cloud"
                 description="This self-paced, web-based training (WBT) course provides an overview of cloud computing as it relates to storage professionals interested in IBM storage. Before talking about how IBM’s storage products integrate with the cloud, we will present an overview of cloud computing in general."
