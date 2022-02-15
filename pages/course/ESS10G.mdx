@@ -1,10 +1,10 @@
 ---
 title: 'ESS10G: Pervasive Encryption on z/OS'
 modality: 'CR'
-summary: 'Pervasive encryption course with hands-on labs, key to IBM security portfolio '
+summary: 'Pervasive encryption course with hands-on labs, key to IBM s security portfolio '
 image: '/static/images/power.jpg'
 brand: 'IBM Z - Mainframe'
-lastPublishedOn: '2021-09-27'
+lastPublishedOn: '2022-02-14'
 firstCreatedOn: '2018-07-06'
 ---
 # Table of Contents
@@ -23,81 +23,89 @@ firstCreatedOn: '2018-07-06'
 13. [Follow-on Courses](#follow-on-courses)
 
 # Short Summary
-Pervasive encryption course with hands-on labs, key to IBM security portfolio 
+Pervasive encryption course with hands-on labs, key to IBM's security portfolio 
 
 # Duration in Hours ⌚
-24
+24.0
 
 # Content Description
-<p>Organizations are compelled to find effective and cost-efficient data security solutions.</p><p>Encryption is one of the technologies that enables organizations to reduce the cost, impact and even likelihood of a breach. Encrypting data can help companies meet the stringent mandates of the GDPR, HIPAA and other mandates.</p><p>IBM z15 has been designed for pervasive encryption, enabling organizations to encrypt 100% of an organization’s IBM Z critical business data in-flight and at-rest, with no application changes and no impact to SLAs. Encrypting only the data required to meet compliance mandates should be considered a minimum threshold, not a best practice. IBM z15 makes pervasive encryption the new standard in data protection and the foundation of a larger data security and protection strategy.</p><p>z/OS is designed to provide new policy-based encryption options that take full advantage of the improvements in the z15 platform. These new capabilities include:</p><p>Data set encryption, which is one aspect of pervasive encryption, provides enhanced data protection for many z/OS data sets gives users the ability to encrypt data without needing to make changes to applications to embed encryption APIs within applications.</p><p>New z/OS policy controls which make it possible to use pervasive encryption to protect user data and simplify the task of compliance for many z/OS data sets, zFS file systems, and Coupling Facility structures.</p><p>Pervasive encryption for IBM Z® is a consumable approach to enable extensive encryption of data in-flight and at-rest to substantially simplify encryption and reduce costs associated with protecting data.</p><p>In this course you will learn how to implement Pervasive Encryption in your z/OS installation. The course explores in detail, the various technologies that are involved in z System and z/OS Cryptographic Services, ICSF, RACF and DFSMS access method Services.</p><p>In the hands-on exercises, you begin with the setup of your hardware crypto environment (CCA crypto express and CPACF), then you will load and activate your AES master keys, setup ICSF and its Key datasets (CKDS PKDS TKDS), then define your data encryption keys, activate your data set encryption policy, and encrypt your data sets and zFS filesystems.</p><p>These exercises reinforce the concepts and technologies being covered in the lectures.</p>
+Organizations are compelled to find effective and cost-efficient data security solutions.
+
+Encryption is one of the technologies that enables organizations to reduce the cost, impact and even likelihood of a breach. Encrypting data can help companies meet the stringent mandates of the GDPR, HIPAA and other mandates.
+
+IBM z15 has been designed for pervasive encryption, enabling organizations to encrypt 100% of an organization’s IBM Z critical business data in-flight and at-rest, with no application changes and no impact to SLAs. Encrypting only the data required to meet compliance mandates should be considered a minimum threshold, not a best practice. IBM z15 makes pervasive encryption the new standard in data protection and the foundation of a larger data security and protection strategy.
+
+z/OS is designed to provide new policy-based encryption options that take full advantage of the improvements in the z15 platform. These new capabilities include:
+
+Data set encryption, which is one aspect of pervasive encryption, provides enhanced data protection for many z/OS data sets gives users the ability to encrypt data without needing to make changes to applications to embed encryption APIs within applications.
+
+New z/OS policy controls which make it possible to use pervasive encryption to protect user data and simplify the task of compliance for many z/OS data sets, zFS file systems, and Coupling Facility structures.
+
+Pervasive encryption for IBM Z® is a consumable approach to enable extensive encryption of data in-flight and at-rest to substantially simplify encryption and reduce costs associated with protecting data.
+
+In this course you will learn how to implement Pervasive Encryption in your z/OS installation. The course explores in detail, the various technologies that are involved in z System and z/OS Cryptographic Services, ICSF, RACF and DFSMS access method Services.
+
+In the hands-on exercises, you begin with the setup of your hardware crypto environment (CCA crypto express and CPACF), then you will load and activate your AES master keys, setup ICSF and its Key datasets (CKDS PKDS TKDS), then define your data encryption keys, activate your data set encryption policy, and encrypt your data sets and zFS filesystems.
+
+These exercises reinforce the concepts and technologies being covered in the lectures.
+
+
 
 # Objectives
-<p>After completing this course, you should be able to:</p>
-
-<ul />
-	<li />
-	<p>Describe the components of Pervasive Encryption on z/OS</p>
-	
-	<li />
-	<p>Explain the role of encryption for data protection</p>
-	
+After completing this course, you should be able to:
 
 
-<p>2</p>
+* Describe the components of Pervasive Encryption on z/OS
+* Explain the role of encryption for data protection
 
-<ul />
-	<li />
-	<p>Implement hardware crypto on your z System</p>
-	
-	<li />
-	<p>Load and activate AES Master Keys</p>
-	
-	<li />
-	<p>Implement and start ICSF</p>
-	
-	<li />
-	<p>Understand the differences between secure keys clear keys and protected keys</p>
-	
-	<li />
-	<p>Describe how are key values used for encryption and decryption</p>
-	
-	<li />
-	<p>Generate, maintain and manage Keys</p>
-	
-	<li />
-	<p>Setup access to key labels</p>
-	
-	<li />
-	<p>Setup policy to supply key label (RACF SMS JCL)</p>
-	
-	<li />
-	<p>Access data in encrypted data sets</p>
-	
-	<li />
-	<p>Create encrypted data sets - Supplying key labels</p>
-	
-	<li />
-	<p>Convert existing data sets to encryption</p>
-	
-	<li />
-	<p>Verify encryption status</p>
-	
-	<li />
-	<p>Encrypt Data in Transit</p>
-	
-	<li />
-	<p>Encrypt Data at Rest</p>
-	
-	<li />
-	<p>Manage data sets, data keys, and key labels</p>
-	
+
+2
+
+
+* Implement hardware crypto on your z System
+* Load and activate AES Master Keys
+* Implement and start ICSF
+* Understand the differences between secure keys clear keys and protected keys
+* Describe how are key values used for encryption and decryption
+* Generate, maintain and manage Keys
+* Setup access to key labels
+* Setup policy to supply key label (RACF SMS JCL)
+* Access data in encrypted data sets
+* Create encrypted data sets - Supplying key labels
+* Convert existing data sets to encryption
+* Verify encryption status
+* Encrypt Data in Transit
+* Encrypt Data at Rest
+* Manage data sets, data keys, and key labels
 
 
 # Agenda
-<ul /><li /><p>Describe the components of Pervasive Encryption on z/OS</p><li /><p>Explain the role of encryption for data protection</p><p>2</p><ul /><li /><p>Implement hardware crypto on your z System</p><li /><p>Load and activate AES Master Keys</p><li /><p>Implement and start ICSF</p><li /><p>Understand the differences between secure keys clear keys and protected keys</p><li /><p>Describe how are key values used for encryption and decryption</p><li /><p>Generate, maintain and manage Keys</p><li /><p>Setup access to key labels</p><li /><p>Setup policy to supply key label (RACF SMS JCL)</p><li /><p>Access data in encrypted data sets</p><li /><p>Create encrypted data sets - Supplying key labels</p><li /><p>Convert existing data sets to encryption</p><li /><p>Verify encryption status</p><li /><p>Encrypt Data in Transit</p><li /><p>Encrypt Data at Rest</p><li /><p>Manage data sets, data keys, and key labels</p>
+* Describe the components of Pervasive Encryption on z/OS
+* Explain the role of encryption for data protection
+
+2
+
+* Implement hardware crypto on your z System
+* Load and activate AES Master Keys
+* Implement and start ICSF
+* Understand the differences between secure keys clear keys and protected keys
+* Describe how are key values used for encryption and decryption
+* Generate, maintain and manage Keys
+* Setup access to key labels
+* Setup policy to supply key label (RACF SMS JCL)
+* Access data in encrypted data sets
+* Create encrypted data sets - Supplying key labels
+* Convert existing data sets to encryption
+* Verify encryption status
+* Encrypt Data in Transit
+* Encrypt Data at Rest
+* Manage data sets, data keys, and key labels
+
 
 # Audience
-<p>This class is intended for z/OS system programmers and security specialists in charge of designing, implementing and monitoring Pervasive Encryption on z/OS.</p>
+This class is intended for z/OS system programmers and security specialists in charge of designing, implementing and monitoring Pervasive Encryption on z/OS.
+
+
 
 # Skill Level
 Intermediate        
@@ -109,18 +117,12 @@ Y
 ibm; ibm z; z/os; pervasive; encryption
 
 # Prerequisites
-<ul />
-	<li />
-	<p>General z/OS knowledge, including basic UNIX System Services skills</p>
-	
-	<li />
-	<p>Basic knowledge of RACF</p>
-	
-	<li />
-	<p>Curriculum relationship</p>
+* General z/OS knowledge, including basic UNIX System Services skills
+* Basic knowledge of RACF
+* Curriculum relationship
 
-	<p>o [ES66G]</p>
-	
+
+o [ES66G]
 
 
 # Enrollment
@@ -130,5 +132,5 @@ https://www.ibm.com/training/course/ESS10G
 None specified.
 
 # Follow-on Courses
-N/A
+None
 

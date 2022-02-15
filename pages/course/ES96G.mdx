@@ -4,7 +4,7 @@ modality: 'CR'
 summary: 'This course is for people who are responsible for maintaining the I/O configuration contained in the input/output data files (IODFs) and input/output configuration data sets (IOCDs) at their z/OS...'
 image: '/static/images/power.jpg'
 brand: 'IBM Z - Mainframe'
-lastPublishedOn: '2021-09-27'
+lastPublishedOn: '2022-02-14'
 firstCreatedOn: '2002-07-20'
 ---
 # Table of Contents
@@ -26,32 +26,72 @@ firstCreatedOn: '2002-07-20'
 This course is for people who are responsible for maintaining the I/O configuration contained in the input/output data files (IODFs) and input/output configuration data sets (IOCDs) at their z/OS...
 
 # Duration in Hours ⌚
-32
+32.0
 
 # Content Description
-<p>Learn to work with the Hardware Configuration Definition (HCD) function for z/OS, and to plan and initiate dynamic reconfiguration of your zSeries hardware environment. Learn to use the HCD dialogs of z/OS to create an Input/Output (I/O) configuration and dynamically alter the I/O configuration. Learn about the creation of an I/O Configuration Dataset (IOCDS) and various reports that HCD can build. Use a z/OS system to reinforce lecture topics and to practice working with the HCD dialogs. Hands-on lab projects may be done in teams depending on the number of attendees and location.</p>
+Learn to work with the Hardware Configuration Definition (HCD) function for z/OS, and to plan and initiate dynamic reconfiguration of your zSeries hardware environment. Learn to use the HCD dialogs of z/OS to create an Input/Output (I/O) configuration and dynamically alter the I/O configuration. Learn about the creation of an I/O Configuration Dataset (IOCDS) and various reports that HCD can build. Use a z/OS system to reinforce lecture topics and to practice working with the HCD dialogs. Hands-on lab projects may be done in teams depending on the number of attendees and location.
+
+
 
 # Objectives
-<ul />
-	<li />Describe new zSeries processor technology
-	<li />Code new zSeries processors (z9 to z196)
-	<li />Code FICON channels and FICON CTCs
-	<li />Code Coupling Facilities (CF) and CF links
-	<li />Code cascaded FICON Directors
-	<li />Create an IODF work file on a z processor from scratch
-	<li />Use CHPID mapping tool to create a validated work IODF
-	<li />Use work IODF and create a production IODF
-	<li />Perform Dynamic I/O changes on a real z/OS system
-	<li />Build a LOADxx parmlib member for initial program load (IPL)
-	<li />View configuration graphically
-	<li />Create appropriate configuration reports
+* Describe new zSeries processor technology
+* Code new zSeries processors (z9 to z196)
+* Code FICON channels and FICON CTCs
+* Code Coupling Facilities (CF) and CF links
+* Code cascaded FICON Directors
+* Create an IODF work file on a z processor from scratch
+* Use CHPID mapping tool to create a validated work IODF
+* Use work IODF and create a production IODF
+* Perform Dynamic I/O changes on a real z/OS system
+* Build a LOADxx parmlib member for initial program load (IPL)
+* View configuration graphically
+* Create appropriate configuration reports
 
 
 # Agenda
-<p><strong>Day 1</strong></p><ul /><li />Welcome<li />Unit 1: HCD introduction<li />Unit 2: IOCP and MVSCP macro review<li />Unit 3: HCD dialog<li />Unit 4: LPAR and logical control unit concepts<li />Unit 5: OSAs, OSA/ICC and HiperSockets<li />Unit 6: Review of zSeries hardware<li />Exercise 1: Overview of lab environment<li />Exercise 2: HCD familiarity<p><strong>Day 2</strong></p><ul /><li />Unit 7: zSeries I/O architecture: Logical channel subsystems<li />Unit 8: Advanced DASD concepts: EAV/PAV and multiple subchannel sets<li />Unit 9: FICON, FICON CTCs, and FICON directors<li />Exercise 3: Coding a zSeries 2817<li />Exercise 4: Adding FICON directors to your configuration (optional)<li />Exercise 5: Incremental migration from IOCP deck (optional)<p><strong>Day 3</strong></p><ul /><li />Unit 10: HCD implementation and migration<li />Unit 11: IPL and LOADxx member<li />Unit 12: Dynamic I/O reconfiguration<li />Unit 13: z196 HCD and using CMT<li />Exercise 6: Building a LOADxx member<li />Exercise 7: Perform dynamic I/O<p><strong>Day 4</strong></p><ul /><li />Unit 14: FICON CTCs for sysplex<li />Unit 15: HCD and Parallel Sysplex<li />Exercise 8: Coding a 2817 using the CMT<li />Exercise 9: Coding CF coupling links<li />Exercise 10: Coding sysplex FICON CTCs
+**Day 1**
+
+* Welcome
+* Unit 1: HCD introduction
+* Unit 2: IOCP and MVSCP macro review
+* Unit 3: HCD dialog
+* Unit 4: LPAR and logical control unit concepts
+* Unit 5: OSAs, OSA/ICC and HiperSockets
+* Unit 6: Review of zSeries hardware
+* Exercise 1: Overview of lab environment
+* Exercise 2: HCD familiarity
+
+**Day 2**
+
+* Unit 7: zSeries I/O architecture: Logical channel subsystems
+* Unit 8: Advanced DASD concepts: EAV/PAV and multiple subchannel sets
+* Unit 9: FICON, FICON CTCs, and FICON directors
+* Exercise 3: Coding a zSeries 2817
+* Exercise 4: Adding FICON directors to your configuration (optional)
+* Exercise 5: Incremental migration from IOCP deck (optional)
+
+**Day 3**
+
+* Unit 10: HCD implementation and migration
+* Unit 11: IPL and LOADxx member
+* Unit 12: Dynamic I/O reconfiguration
+* Unit 13: z196 HCD and using CMT
+* Exercise 6: Building a LOADxx member
+* Exercise 7: Perform dynamic I/O
+
+**Day 4**
+
+* Unit 14: FICON CTCs for sysplex
+* Unit 15: HCD and Parallel Sysplex
+* Exercise 8: Coding a 2817 using the CMT
+* Exercise 9: Coding CF coupling links
+* Exercise 10: Coding sysplex FICON CTCs
+
 
 # Audience
-<p>This course is for people who are responsible for maintaining the I/O configuration contained in the input/output data files (IODFs) and input/output configuration data sets (IOCDs) at their z/OS installation.</p>
+This course is for people who are responsible for maintaining the I/O configuration contained in the input/output data files (IODFs) and input/output configuration data sets (IOCDs) at their z/OS installation.
+
+
 
 # Skill Level
 Intermediate        
@@ -63,13 +103,15 @@ Y
 HCD;introduction;ES96G; ES96
 
 # Prerequisites
-<p>You should have:</p>
-
-<ul />
-	<li />A basic knowledge of z/OS and I/O configuration
+You should have:
 
 
-<p>This knowledge can be developed on the job, or by taking <em>Fundamental System Skills in z/OS (ES10A)</em>.</p>
+* A basic knowledge of z/OS and I/O configuration
+
+
+This knowledge can be developed on the job, or by taking *Fundamental System Skills in z/OS (ES10A)*.
+
+
 
 # Enrollment
 https://www.ibm.com/training/course/ES96G
@@ -78,5 +120,5 @@ https://www.ibm.com/training/course/ES96G
 None specified.
 
 # Follow-on Courses
-N/A
+None
 

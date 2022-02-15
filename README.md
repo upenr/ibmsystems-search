@@ -1,6 +1,8 @@
 # IBM Systems Training Search Website 🔍
 
-This is a React and Next.js-based [website](https://systemstraining.vercel.app) which delivers pre-rendered pages to view, search and filter for content on IBM Systems. There is a view counter that updates in real time.
+This is a React and Next.js-based [website](https://systemstraining.vercel.app) which delivers pre-rendered pages to view, search and filter for content on IBM Systems. There is a view counter for each course that updates in real time.
+
+Use this website to find Systems infrastructure related training you like.
 
 ## Overview
 

@@ -4,7 +4,7 @@ modality: 'CR'
 summary: 'The primary audience for this intermediate course are z/OS system programmers who are new to z/OS installation, customization, measurement and tuning, or problem determination. Subsystem....'
 image: '/static/images/power.jpg'
 brand: 'IBM Z - Mainframe'
-lastPublishedOn: '2021-09-27'
+lastPublishedOn: '2022-02-14'
 firstCreatedOn: '2002-07-20'
 ---
 # Table of Contents
@@ -26,30 +26,56 @@ firstCreatedOn: '2002-07-20'
 The primary audience for this intermediate course are z/OS system programmers who are new to z/OS installation, customization, measurement and tuning, or problem determination. Subsystem....
 
 # Duration in Hours ⌚
-36
+36.0
 
 # Content Description
-<p>This course presents the structure and control blocks of the z/OS BCP and system services. It prepares the new z/OS system programmer to identify potential bottlenecks and performance problems, perform initial error symptom gathering, and identify opportunities and requirements for tailoring a z/OS system. This course also provides prerequisite information needed for further training in specialized areas such as system measurement and tuning and system problem determination.</p>
+This course presents the structure and control blocks of the z/OS BCP and system services. It prepares the new z/OS system programmer to identify potential bottlenecks and performance problems, perform initial error symptom gathering, and identify opportunities and requirements for tailoring a z/OS system. This course also provides prerequisite information needed for further training in specialized areas such as system measurement and tuning and system problem determination.
+
+
 
 # Objectives
-<ul />
-	<li />Explain the MVS functions and control blocks necessary to support a task in a multitasking and multiprocessing environment
-	<li />Describe the software and hardware functions that allow a program to interact with programs running in other address spaces, use data in other address spaces, and use data in data spaces
-	<li />Trace the flow of an I/O operation from the initial request in the application program through the completion of data transfer
-	<li />Identify the control blocks that describe the current status of an I/O request
-	<li />Describe the functions of the z/OS BCP Virtual, Real, and Auxiliary Storage Managers
-	<li />Describe the functions performed by the Recovery Termination Manager and recovery management components to minimize failure impact and enhance error correction
-	<li />Select the appropriate IBM publication to provide further technical information (SRLs, Technical Bulletins, Self-study and other z/OS courses)
-	<li />Describe the services provided by cross system extended services (XES)
-	<li />Identify and explain the purpose of the cache, list, and lock structures
-	<li />Plan the implementation of the global resource serialization STAR environment.0.2 pref
+* Explain the MVS functions and control blocks necessary to support a task in a multitasking and multiprocessing environment
+* Describe the software and hardware functions that allow a program to interact with programs running in other address spaces, use data in other address spaces, and use data in data spaces
+* Trace the flow of an I/O operation from the initial request in the application program through the completion of data transfer
+* Identify the control blocks that describe the current status of an I/O request
+* Describe the functions of the z/OS BCP Virtual, Real, and Auxiliary Storage Managers
+* Describe the functions performed by the Recovery Termination Manager and recovery management components to minimize failure impact and enhance error correction
+* Select the appropriate IBM publication to provide further technical information (SRLs, Technical Bulletins, Self-study and other z/OS courses)
+* Describe the services provided by cross system extended services (XES)
+* Identify and explain the purpose of the cache, list, and lock structures
+* Plan the implementation of the global resource serialization STAR environment.0.2 pref
 
 
 # Agenda
-<p><strong>Day 1</strong></p><ul /><li />Welcome<li />Unit 1 - z/OS system introduction<p><strong>Day 2</strong></p><ul /><li />Unit 2 - Operating environment initialization<li />Unit 3 - Task management<p><strong>Day 3</strong></p><ul /><li />Unit 4 - Addressability<li />Unit 5 - Input/Output supervisor<p><strong>Day 4</strong></p><ul /><li />Unit 6 - Storage management<li />Unit 7 - Recovery termination manager<p><strong>Day 5</strong></p><ul /><li />Unit 7 - Recovery termination manager (Continued)
+**Day 1**
+
+* Welcome
+* Unit 1 - z/OS system introduction
+
+**Day 2**
+
+* Unit 2 - Operating environment initialization
+* Unit 3 - Task management
+
+**Day 3**
+
+* Unit 4 - Addressability
+* Unit 5 - Input/Output supervisor
+
+**Day 4**
+
+* Unit 6 - Storage management
+* Unit 7 - Recovery termination manager
+
+**Day 5**
+
+* Unit 7 - Recovery termination manager (Continued)
+
 
 # Audience
-<p>The primary audience for this intermediate course are z/OS system programmers who are new to z/OS installation, customization, measurement and tuning, or problem determination. Subsystem programmers will also benefit from this class.</p>
+The primary audience for this intermediate course are z/OS system programmers who are new to z/OS installation, customization, measurement and tuning, or problem determination. Subsystem programmers will also benefit from this class.
+
+
 
 # Skill Level
 Intermediate        
@@ -61,28 +87,27 @@ N
 z/OS system introduction;ES20G; ES20
 
 # Prerequisites
-<p>You should be able to:</p>
-
-<ul />
-	<li />Describe the following z/OS BCP (MVS) characteristics:
-	<ul />
-		<li />multiprocessing
-		<li />multiprogramming
-		<li />virtual storage <strong>and</strong> paging
-		<li /><strong>and</strong> multiple address space/data space architecture
-	
-	
+You should be able to:
 
 
-<ul />
-	<li />Explain how paging <strong>and</strong> swapping are accomplished through the interaction of real/central, expanded, auxiliary, <strong>and</strong> virtual storage in a z/OS system
-	<li />Explain the role of the dispatcher, interrupts, SVCs, the program manager, <strong>and</strong> serialization in managing work in a z/OS system
-	<li />State the role of z/OS software <strong>and</strong> hardware components in handling an I/O request for data on a direct access storage device
+* Describe the following z/OS BCP (MVS) characteristics:
+	+ multiprocessing
+	+ multiprogramming
+	+ virtual storage **and** paging
+	+ **and** multiple address space/data space architecture
 
 
-<p>These prerequisites can be met through on the job training <strong>or</strong> completion of z/OS Facilities.</p>
+* Explain how paging **and** swapping are accomplished through the interaction of real/central, expanded, auxiliary, **and** virtual storage in a z/OS system
+* Explain the role of the dispatcher, interrupts, SVCs, the program manager, **and** serialization in managing work in a z/OS system
+* State the role of z/OS software **and** hardware components in handling an I/O request for data on a direct access storage device
 
-<p><strong>Note</strong>: A fundamental knowledge of hexadecimal notation, assembler language, <strong>and</strong> z/Architecture instruction execution will enhance your understanding of the course material. Completion of Assembler Language Coding Workshop <strong>or</strong> Assembler Language Series is recommended.</p>
+
+These prerequisites can be met through on the job training **or** completion of z/OS Facilities.
+
+
+**Note**: A fundamental knowledge of hexadecimal notation, assembler language, **and** z/Architecture instruction execution will enhance your understanding of the course material. Completion of Assembler Language Coding Workshop **or** Assembler Language Series is recommended.
+
+
 
 # Enrollment
 https://www.ibm.com/training/course/ES20G
@@ -91,5 +116,5 @@ https://www.ibm.com/training/course/ES20G
 None specified.
 
 # Follow-on Courses
-N/A
+None
 

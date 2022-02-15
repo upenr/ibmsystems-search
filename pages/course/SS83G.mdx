@@ -4,7 +4,7 @@ modality: 'CR'
 summary: 'This is an intermediate course for individuals who manage data sets using IDCAMS and VSAM.'
 image: '/static/images/power.jpg'
 brand: 'Storage'
-lastPublishedOn: '2021-09-27'
+lastPublishedOn: '2022-02-14'
 firstCreatedOn: '2002-07-20'
 ---
 # Table of Contents
@@ -26,45 +26,190 @@ firstCreatedOn: '2002-07-20'
 This is an intermediate course for individuals who manage data sets using IDCAMS and VSAM.
 
 # Duration in Hours ⌚
-32
+32.0
 
 # Content Description
-<p>This course is designed to teach how to manage VSAM and non-VSAM data sets by coding and using the functions and features of the Access Method Services program, IDCAMS.</p>
+This course is designed to teach how to manage VSAM and non-VSAM data sets by coding and using the functions and features of the Access Method Services program, IDCAMS.
 
-<p>To reinforce the lecture material, machine exercises are provided that enable students to code and test selected IDCAMS commands such as DEFINE, REPRO, ALTER, and LISTCAT.</p>
 
-<p>Learn to manage Virtual Storage Access Method (VSAM) and non-VSAM data sets. Particularly emphasize coding and using the functions of the IDCAMS program. Lab exercises enable you to code and test selected IDCAMS commands, such as DEFINE, REPRO, ALTER, and LISTCAT. &nbsp;</p>
+To reinforce the lecture material, machine exercises are provided that enable students to code and test selected IDCAMS commands such as DEFINE, REPRO, ALTER, and LISTCAT.
 
-<p><strong>Hands-On Labs</strong></p>
 
-<p>Eight labs are included to address: &nbsp;</p>
+Learn to manage Virtual Storage Access Method (VSAM) and non-VSAM data sets. Particularly emphasize coding and using the functions of the IDCAMS program. Lab exercises enable you to code and test selected IDCAMS commands, such as DEFINE, REPRO, ALTER, and LISTCAT.  
 
-<ul />
-	<li />IDCAMS commands, including ALTER, DEFINE, CLUSTER, EXPORT, IMPORT, EXAMINE, LISTCAT, REPRO, and PRINT &nbsp;
-	<li />tuning VSAM and the VSAM buffers &nbsp;
-	<li />alternate indexes
+
+**Hands-On Labs**
+
+
+Eight labs are included to address:  
+
+
+* IDCAMS commands, including ALTER, DEFINE, CLUSTER, EXPORT, IMPORT, EXAMINE, LISTCAT, REPRO, and PRINT
+* tuning VSAM and the VSAM buffers
+* alternate indexes
 
 
 # Objectives
-<ul />
-	<li />Understand the structure and use of VSAM data sets or clusters
-	<li />Code IDCAMS commands to define and load VSAM clusters
-	<li />Code IDCAMS commands to define and load alternate indexes
-	<li />Code IDCAMS commands to list, alter, and delete catalog entries
-	<li />Code IDCAMS commands to print data sets
-	<li />Calculate the Direct Access Storage Device (DASD) space requirements for VSAM clusters
-	<li />Code the Job Control Language (JCL) for IDCAMS and programs which process VSAM clusters
-	<li />Use IDCAMS and JCL options to improve the performance of a VSAM job
-	<li />Reorganize, back up, and recover VSAM and non-VSAM data sets
-	<li />Interpret an IDCAMS listing of an Integrated Catalog Facility (ICF) catalog
-	<li />Select and use the appropriate documentation to utilize VSAM and IDCAMS
+* Understand the structure and use of VSAM data sets or clusters
+* Code IDCAMS commands to define and load VSAM clusters
+* Code IDCAMS commands to define and load alternate indexes
+* Code IDCAMS commands to list, alter, and delete catalog entries
+* Code IDCAMS commands to print data sets
+* Calculate the Direct Access Storage Device (DASD) space requirements for VSAM clusters
+* Code the Job Control Language (JCL) for IDCAMS and programs which process VSAM clusters
+* Use IDCAMS and JCL options to improve the performance of a VSAM job
+* Reorganize, back up, and recover VSAM and non-VSAM data sets
+* Interpret an IDCAMS listing of an Integrated Catalog Facility (ICF) catalog
+* Select and use the appropriate documentation to utilize VSAM and IDCAMS
 
 
 # Agenda
-<p>Introduction to VSAM data sets</p><ul /><li />describe the structure, organization, and use of VSAM clusters<li />explain the function of Control Intervals (CI) and Control Areas (CA)<li />describe the purpose of CI splits and CA splits and how they are accomplished<li />estimate DASD space requirements for various cluster types<p>ICF catalogs</p><ul /><li />discuss the use of the ICF catalog<li />describe the structure, purpose, and basic contents of the master catalog<li />describe how the master catalog is located at initial program load (IPL) time<li />discuss the structure, purpose, and basic contents of user catalogs<li />create the ICF catalogs<li />describe the catalog search<li />discuss and create the two types of alias<p>IDCAMS commands, part 1</p><ul /><li />discuss the IDCAMS program<li />code the JCL to run IDCAMS<li />code the DEFINE CLUSTER command to create specific VSAM data set organizations<li />code the LISTCAT command to format and print entries from the catalog<p>JCL for VSAM</p><ul /><li />explain creation and deletion of VSAM clusters using JCL and the DFSMS data class facility<li />describe the additional JCL parameters that support VSAM clusters<li />discuss the purpose of data class<li />explain the assignment of data class through JCL and the Automatic Class Selection (ACS) routines<p>IDCAMS commands, part 2</p><ul /><li />describe the function of REPRO, PRINT and DELETE commands<li />use REPRO to load and back up a VSAM cluster<li />use PRINT to print a VSAM cluster in various formats<li />use DELETE to remove the catalog entry for the data set and scratch the data set from the volume<li />describe and code modal commands to provide for conditional execution of Access Method Services (AMS) statements<p>Buffering</p><ul /><li />explain how buffer space may impact performance either positively or negatively<li />explain the use of data and index buffers in&nbsp;sequential processing and&nbsp;direct processing<li />evaluate the use of JCL Access Method Parameters (AMP) keywords to manage buffers<li />code the buffer keywords on the Dataset Definition (DD) statement<p>VSAM integrity and security</p><ul /><li />explain how integrity and security is maintained<li />discuss the meaning and use of SHAREOPTIONS<li />discuss the need for serialization of updates to a data set<li />describe how ENQ/DEQ macros are used to serialize data set updates in multiregion and multisystem environments<li />explain the impact of buffering and SHAREOPTION modifications<li />explain VSAM record level sharing<li />use the VSAM integrity and security options: RECOVERY, ERASE, VERIFY, and passwords<li />compare VSAM passwords with Resource Access Control Facility (RACF) security<p>Tuning</p><ul /><li />explain the use of CI and CA FREESPACE<li />discuss the performance impact of cache<li />describe the space allocation process with&nbsp;KEYRANGES and multivolume data sets<li />explain the contents of an Index CI<li />explain how VSAM key compression works<p>IDCAMS ALTER</p><ul /><li />explain the basic functions of the ALTER command<li />code the ALTER command to modify options for&nbsp;processing existing VSAM objects<li />code the ALTER command to modify options for&nbsp;buffering, FREESPACE, SHAREOPTIONS and passwords<p>Alternate indexes</p><ul /><li />describe the reasons for using an alternate index<li />discuss the basic contents of an alternate index<li />use a PATH to process base cluster records directly and in alternate key sequence<li />define and load an alternate index<li />explain the impact of SHAREOPTIONS when opening a base cluster and associated alternate indices<li />explain programming and JCL considerations<p>Advanced functions and extended format data sets</p><ul /><li />explain VSAM advanced functions, extended format data sets, and their major features<li />explain data stripping<li />explain compression<li />explain multivolume allocation options<li />explain extended addressability<li />explain system managed buffering<li />explain partial space release<li />explain space constraint relief<p>Data set reorganization, backup, and recovery</p><ul /><li />describe the need for data set backup<li />explain the advantages and disadvantages of&nbsp;REPRO<li />explain the advantages and disadvantages of&nbsp;EXPORT / IMPORT<li />explain the advantages and disadvantages of&nbsp;DFSMS Data Set Services (DFSMSdss) DUMP / RESTORE<li />explain the advantages and disadvantages of&nbsp;DFSMS Hierarchical Storage Management (DFSMShsm) HBACKDS / HRECOVER<li />discuss backup frequency<li />determine when reorganization is required<li />code the AMS commands for backup, recovery, and reorganization<p>Linear Data Sets (LDS)</p><ul /><li />describe Data-In-Virtual (DIV)<li />explain the structure and use of LDS<li />explain the use of the DIV macro to access LDS<li />discuss candidates for LDS<p>Management and problem analysis aids</p><ul /><li />explain the use of the DCOLLECT command to gather management and planning information about the storage subsystem<li />discuss tools used to identify and trace VSAM errors<li />code the AMS EXAMINE command to test the structure of a Key Sequenced Data Set (KSDS)<li />interpret EXAMINE output to determine how to recover from a KSDS structural error<li />invoke the Generalized Trace Facility (GTF) to track VSAM-related events<li />invoke utilities to print GTF trace output<p>Local and global shared resources</p><ul /><li />explain techniques to conserve virtual storage by sharing buffers and control blocks<li />discuss the concept of shared resource pools<li />discuss the advantages and disadvantages of&nbsp;Local Shared Resources (LSR)<li />discuss the advantages and disadvantages of&nbsp;Global Shared Resources (GSR)<li />describe macros that control use and allocation of shared resources<li />discuss how to specify and monitor shared buffer allocation in CICS and Information Management System (IMS)<p>CICS VSAM recovery</p><ul /><li />describe the major functions of CICS VSAM recovery<li />explain the concept of transaction processing, backup, and recovery<li />explain how to implement and manage CICS VSAM recovery<p>Application coding considerations</p><ul /><li />describe VSAM processing terminology<li />define various VSAM processing options<li />explain the merge of catalog entries, JCL parameters, and program definitions that determine processing options<li />discuss VSAM programming support, and JCL requirements in Common Business Oriented Language (COBOL), Programming Language One (PL/I), and Assembler languages<li />describe JCL and programming requirements for COBOL, PL/I, and Assembler languages
+Introduction to VSAM data sets
+
+* describe the structure, organization, and use of VSAM clusters
+* explain the function of Control Intervals (CI) and Control Areas (CA)
+* describe the purpose of CI splits and CA splits and how they are accomplished
+* estimate DASD space requirements for various cluster types
+
+ICF catalogs
+
+* discuss the use of the ICF catalog
+* describe the structure, purpose, and basic contents of the master catalog
+* describe how the master catalog is located at initial program load (IPL) time
+* discuss the structure, purpose, and basic contents of user catalogs
+* create the ICF catalogs
+* describe the catalog search
+* discuss and create the two types of alias
+
+IDCAMS commands, part 1
+
+* discuss the IDCAMS program
+* code the JCL to run IDCAMS
+* code the DEFINE CLUSTER command to create specific VSAM data set organizations
+* code the LISTCAT command to format and print entries from the catalog
+
+JCL for VSAM
+
+* explain creation and deletion of VSAM clusters using JCL and the DFSMS data class facility
+* describe the additional JCL parameters that support VSAM clusters
+* discuss the purpose of data class
+* explain the assignment of data class through JCL and the Automatic Class Selection (ACS) routines
+
+IDCAMS commands, part 2
+
+* describe the function of REPRO, PRINT and DELETE commands
+* use REPRO to load and back up a VSAM cluster
+* use PRINT to print a VSAM cluster in various formats
+* use DELETE to remove the catalog entry for the data set and scratch the data set from the volume
+* describe and code modal commands to provide for conditional execution of Access Method Services (AMS) statements
+
+Buffering
+
+* explain how buffer space may impact performance either positively or negatively
+* explain the use of data and index buffers in sequential processing and direct processing
+* evaluate the use of JCL Access Method Parameters (AMP) keywords to manage buffers
+* code the buffer keywords on the Dataset Definition (DD) statement
+
+VSAM integrity and security
+
+* explain how integrity and security is maintained
+* discuss the meaning and use of SHAREOPTIONS
+* discuss the need for serialization of updates to a data set
+* describe how ENQ/DEQ macros are used to serialize data set updates in multiregion and multisystem environments
+* explain the impact of buffering and SHAREOPTION modifications
+* explain VSAM record level sharing
+* use the VSAM integrity and security options: RECOVERY, ERASE, VERIFY, and passwords
+* compare VSAM passwords with Resource Access Control Facility (RACF) security
+
+Tuning
+
+* explain the use of CI and CA FREESPACE
+* discuss the performance impact of cache
+* describe the space allocation process with KEYRANGES and multivolume data sets
+* explain the contents of an Index CI
+* explain how VSAM key compression works
+
+IDCAMS ALTER
+
+* explain the basic functions of the ALTER command
+* code the ALTER command to modify options for processing existing VSAM objects
+* code the ALTER command to modify options for buffering, FREESPACE, SHAREOPTIONS and passwords
+
+Alternate indexes
+
+* describe the reasons for using an alternate index
+* discuss the basic contents of an alternate index
+* use a PATH to process base cluster records directly and in alternate key sequence
+* define and load an alternate index
+* explain the impact of SHAREOPTIONS when opening a base cluster and associated alternate indices
+* explain programming and JCL considerations
+
+Advanced functions and extended format data sets
+
+* explain VSAM advanced functions, extended format data sets, and their major features
+* explain data stripping
+* explain compression
+* explain multivolume allocation options
+* explain extended addressability
+* explain system managed buffering
+* explain partial space release
+* explain space constraint relief
+
+Data set reorganization, backup, and recovery
+
+* describe the need for data set backup
+* explain the advantages and disadvantages of REPRO
+* explain the advantages and disadvantages of EXPORT / IMPORT
+* explain the advantages and disadvantages of DFSMS Data Set Services (DFSMSdss) DUMP / RESTORE
+* explain the advantages and disadvantages of DFSMS Hierarchical Storage Management (DFSMShsm) HBACKDS / HRECOVER
+* discuss backup frequency
+* determine when reorganization is required
+* code the AMS commands for backup, recovery, and reorganization
+
+Linear Data Sets (LDS)
+
+* describe Data-In-Virtual (DIV)
+* explain the structure and use of LDS
+* explain the use of the DIV macro to access LDS
+* discuss candidates for LDS
+
+Management and problem analysis aids
+
+* explain the use of the DCOLLECT command to gather management and planning information about the storage subsystem
+* discuss tools used to identify and trace VSAM errors
+* code the AMS EXAMINE command to test the structure of a Key Sequenced Data Set (KSDS)
+* interpret EXAMINE output to determine how to recover from a KSDS structural error
+* invoke the Generalized Trace Facility (GTF) to track VSAM-related events
+* invoke utilities to print GTF trace output
+
+Local and global shared resources
+
+* explain techniques to conserve virtual storage by sharing buffers and control blocks
+* discuss the concept of shared resource pools
+* discuss the advantages and disadvantages of Local Shared Resources (LSR)
+* discuss the advantages and disadvantages of Global Shared Resources (GSR)
+* describe macros that control use and allocation of shared resources
+* discuss how to specify and monitor shared buffer allocation in CICS and Information Management System (IMS)
+
+CICS VSAM recovery
+
+* describe the major functions of CICS VSAM recovery
+* explain the concept of transaction processing, backup, and recovery
+* explain how to implement and manage CICS VSAM recovery
+
+Application coding considerations
+
+* describe VSAM processing terminology
+* define various VSAM processing options
+* explain the merge of catalog entries, JCL parameters, and program definitions that determine processing options
+* discuss VSAM programming support, and JCL requirements in Common Business Oriented Language (COBOL), Programming Language One (PL/I), and Assembler languages
+* describe JCL and programming requirements for COBOL, PL/I, and Assembler languages
+
 
 # Audience
-<p>This is an intermediate course for individuals who manage data sets using IDCAMS and VSAM.</p>
+This is an intermediate course for individuals who manage data sets using IDCAMS and VSAM.
+
+
 
 # Skill Level
 Intermediate        
@@ -76,13 +221,13 @@ Y
 SS83G; z/OS;VSAM;Access Method Services
 
 # Prerequisites
-<p>You should complete:</p>
+You should complete:
 
-<ul />
-	<li /><em>z/OS Facilities (ES15) </em>
-	<li /><em>z/OS Job Control Language and Utilities (ES07)</em><strong> or </strong>
-	<li /><em>Fundamental System Skills in z/OS (ES10) </em>
-	<li /><strong>or</strong> have equivalent experience
+
+* *z/OS Facilities (ES15)*
+* *z/OS Job Control Language and Utilities (ES07)* **or**
+* *Fundamental System Skills in z/OS (ES10)*
+* **or** have equivalent experience
 
 
 # Enrollment
@@ -92,5 +237,5 @@ https://www.ibm.com/training/course/SS83G
 None specified.
 
 # Follow-on Courses
-N/A
+None
 
