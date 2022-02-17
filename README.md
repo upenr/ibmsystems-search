@@ -25,3 +25,4 @@ npm run dev
 - [Chakra UI](https://chakra-ui.com/)
 - Data from [IBM Training](https://ibm.com/training) parsed with Excel and Python (openpyxl)
 - [Firebase Realtime Database](https://firebase.google.com/docs/database)
+- [ButtonDown](https://buttondown.email) for newsletter

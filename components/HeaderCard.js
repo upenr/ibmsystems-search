@@ -54,7 +54,7 @@ const HeaderCard = ({ title, href, buttonText }) => {
       >
         <Image
           priority="true"
-          src="/static/images/itoperations.png"
+          src="/static/images/intro.svg"
           width={180}
           height={180}
         />
