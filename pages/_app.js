@@ -46,21 +46,16 @@ const App = ({ Component, pageProps }) => {
 
   useEffect(() => {
     const handleRouteChange = (url, { shallow }) => {
-      console.log(
-        `App is changing to ${url} ${
-          shallow ? 'with' : 'without'
-        } shallow routing`
-      );
+      ga.pageview(url)
     };
 
     router.events.on('routeChangeStart', handleRouteChange);
 
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method:
+    // If the component is unmounted, unsubscribe from the event with the `off` method:
     return () => {
       router.events.off('routeChangeStart', handleRouteChange);
     };
-  }, []);
+  }, [router.events]);
 
   return (
     <>
