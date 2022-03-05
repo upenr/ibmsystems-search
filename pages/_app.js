@@ -10,6 +10,8 @@ import { Global, css } from '@emotion/react';
 import MDXComponents from '../components/MDXComponents';
 import SEO from '../next-seo.config';
 import { prismLightTheme, prismDarkTheme } from '../styles/prism';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -40,6 +42,26 @@ const GlobalStyle = ({ children }) => {
 };
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url, { shallow }) => {
+      console.log(
+        `App is changing to ${url} ${
+          shallow ? 'with' : 'without'
+        } shallow routing`
+      );
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, []);
+
   return (
     <>
       <DefaultSeo {...SEO} />
