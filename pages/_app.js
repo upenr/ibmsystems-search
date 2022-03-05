@@ -12,6 +12,7 @@ import SEO from '../next-seo.config';
 import { prismLightTheme, prismDarkTheme } from '../styles/prism';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import * as ga from '../lib/ga/index'
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
