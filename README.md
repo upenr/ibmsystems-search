@@ -29,11 +29,11 @@ MAILCHIMP_API_KEY=\
 MAILCHIMP_API_SERVER=\
 MAILCHIMP_AUDIENCE_ID=\
 BUTTONDOWN_API_KEY=\
-NEXT_PUBLIC_GOOGLE_ANALYTICS=\
+NEXT_PUBLIC_GOOGLE_ANALYTICS=
 
 ## Running Locally 💻
 
-- Clone this project, import environment variables above in .env.local and run;
+- Clone this project, import environment variables above in `.env.local` and run;
 ```bash
 npm run dev
 ```
