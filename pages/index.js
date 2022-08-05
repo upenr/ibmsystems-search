@@ -98,6 +98,12 @@ const Index = () => {
                 icon={myIcons.PowerIcon}
               />
               <ProjectCard
+                title="QZC30G: IBM PowerVC 2.0 Workshop"
+                description="This course aims to provide an overall understanding of how to install and configure IBM PowerVC Standard Edition and IBM PowerVC for Private Cloud, in an environment with HMC and IBM PowerVM NovaLink. The hands-on lab covers exercises from the basics of installing IBM PowerVC to performing advanced administrative tasks."
+                href="/course/QZC30G"
+                icon={myIcons.PowerIcon}
+              />
+              <ProjectCard
                 title="QZC50G: DevOps with Private Cloud on IBM Power Systems: Learn Ansible, Chef and Puppet"
                 description="The course addresses the concepts involved in planning, deploying and implementing Ansible, Chef and Puppet, and shows how to integrate these tools with IBM Cloud PowerVC Manager. You perform basic installation to advanced administrative tasks with these DevOps tools. In addition, the product architectures of these tools, and their benefits are covered while showing how to implement these tools to fit your needs."
                 href="/course/QZC50G"

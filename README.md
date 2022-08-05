@@ -22,6 +22,7 @@ NEXT_PUBLIC_GOOGLE_ANALYTICS=
 
 - Clone this project, import environment variables above in `.env.local` and run;
 ```bash
+npm i
 npm run dev
 ```
 
