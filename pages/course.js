@@ -26,8 +26,8 @@ import CoursePost from '../components/CoursePost';
 import { default as content, frontMatter as courses1 } from './course/*.mdx';
 
 const url = 'https://systemstraining.vercel.app/course';
-const title = 'Courses: IBM Systems Training';
-const description = 'IBM Systems Training Courses.';
+const title = 'Courses: IBM Infrastructure Training';
+const description = 'IBM Infrastructure Training Courses.';
 //let newSlugArray = [];
 
 const course = () => {

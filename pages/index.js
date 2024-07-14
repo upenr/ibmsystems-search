@@ -19,7 +19,7 @@ import ProjectCard from '../components/ProjectCard';
 import Subscribe from '../components/Subscribe';
 
 const url = 'https://systemstraining.vercel.app';
-const title = 'Home: IBM Systems Training Search';
+const title = 'Home: IBM Infrastructure Training Search';
 
 const Index = () => {
   const { colorMode } = useColorMode();
@@ -51,10 +51,9 @@ const Index = () => {
             maxWidth="100%"
             mb="40"
             mt="20"
-            mb={64}
           >
             <HeaderCard
-              title="IBM Systems Training Course Search"
+              title="Search for courses on IBM Infrastructure"
               href="/course"
               buttonText="Get started"
             />
@@ -104,9 +103,9 @@ const Index = () => {
                 icon={myIcons.PowerIcon}
               />
               <ProjectCard
-                title="QZC50G: DevOps with Private Cloud on IBM Power Systems: Learn Ansible, Chef and Puppet"
-                description="The course addresses the concepts involved in planning, deploying and implementing Ansible, Chef and Puppet, and shows how to integrate these tools with IBM Cloud PowerVC Manager. You perform basic installation to advanced administrative tasks with these DevOps tools. In addition, the product architectures of these tools, and their benefits are covered while showing how to implement these tools to fit your needs."
-                href="/course/QZC50G"
+                title="QZC51G: Ansible on IBM Power Workshop"
+                description="Learn to efficiently manage Ansible on an IBM Power environment. You’ll be introduced to the world of automation through hands-on curriculum developed by IBM experts and thought leaders."
+                href="/course/QZC51G"
                 icon={myIcons.AnsibleIcon}
               />
 			   <ProjectCard
@@ -159,7 +158,7 @@ const Index = () => {
               </Heading>
               <ProjectCard
                 title="Linux and Private Cloud Administration on IBM Power Specialization"
-                description="This specialization introduces Red Hat Enterprise Linux system administration and private cloud capabilities of IBM Systems. IBM Power servers will be used to demonstrate these concepts. Through three courses, you will learn a range of concepts from how to get started with Linux, to using Linux in a large cloud environment. Brought to you by IBM!"
+                description="This specialization introduces Red Hat Enterprise Linux system administration and private cloud capabilities of IBM Infrastructure. IBM Power servers will be used to demonstrate these concepts. Through three courses, you will learn a range of concepts from how to get started with Linux, to using Linux in a large cloud environment. Brought to you by IBM!"
                 href="https://www.coursera.org/specializations/linux-private-cloud-administration-power-systems"
                 icon={myIcons.CourseraIcon}
               />

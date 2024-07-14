@@ -14,9 +14,9 @@
     "url": "https://github.com/upenr/ibmsystems-search.git"
   },
   "scripts": {
-    "dev": "rimraf .next && next dev",
-    "build": "rimraf .next && next build",
-    "start": "next start",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf .next && next dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf .next && next build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
     "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
     "postinstall": "patch-package"
   },

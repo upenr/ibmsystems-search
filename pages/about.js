@@ -33,7 +33,7 @@ const About = () => {
 
   const property1 = {
     imageUrl: '/static/images/power.jpeg',
-    imageAlt: 'IBM Power Systems server',
+    imageAlt: 'IBM Power server',
     title: 'IBM Power'
   };
   const property2 = {
@@ -64,9 +64,8 @@ const About = () => {
           Welcome. Use this website to quickly <Link
             href="/course"
             color="blue.500"
-          >search</Link> for IBM Systems courses. We're
-          part of IBM Systems. Conquer the most demanding IT workloads
-          with IBM Systems' servers and storage.
+          >search</Link> for IBM Infrastructure courses. Conquer the most demanding IT workloads
+          with IBM Infrastructure servers and storage.
         </Text>
         <Flex
           direction={['column', 'row']}
@@ -101,7 +100,7 @@ const About = () => {
                     letterSpacing="tight"
                     colorScheme="blue"
                   >
-                    IBM Systems
+                    IBM Infrastructure
                   </Badge>
                 </Box>
                 <Box
@@ -143,7 +142,7 @@ const About = () => {
                     letterSpacing="tight"
                     colorScheme="blue"
                   >
-                    IBM Systems
+                    IBM Infrastructure
                   </Badge>
                 </Box>
                 <Box
@@ -179,7 +178,7 @@ const About = () => {
                     letterSpacing="tight"
                     colorScheme="blue"
                   >
-                    IBM Systems
+                    IBM Infrastructure
                   </Badge>
                 </Box>
                 <Box
@@ -197,25 +196,25 @@ const About = () => {
           </Link>
         </Flex>
         <Heading letterSpacing="tight" mb={4} mt={16} as="h2" size="xl">
-          IBM Systems Training
+          IBM Infrastructure Training
         </Heading>
         <Text color={secondaryTextColor[colorMode]} mb={4}>
           Get authorized training and certification on a range of products and
           solutions from&nbsp;
-          <Link href="https://ibm.co/Systems" color="blue.500" isExternal>
-            IBM Systems.
+          <Link href="https://www.ibm.com/it-infrastructure" color="blue.500" isExternal>
+            IBM Infrastructure.
           </Link>
         </Text>
 
-        <Heading letterSpacing="tight" mb={4} mt={16} as="h2" size="xl">
-          IBM Systems Conference
+        <Heading letterSpacing="tight" mb={4} mt={8} as="h2" size="xl">
+          IBM Infrastructure Conferences
         </Heading>
         <Link
-          href="https://www.ibm.com/training/events/"
+          href="https://www.ibm.com/community/ibm-techxchange-conference/"
           color="blue.500"
           isExternal
         >
-          IBM TechU <ExternalLinkIcon mx="2px" />
+          IBM TechXchange <ExternalLinkIcon mx="2px" />
         </Link>
 
         <Flex
@@ -223,7 +222,7 @@ const About = () => {
           justifyContent="flex-start"
           alignItems="flex-start"
           maxWidth="100%"
-          mt={16}
+          mt={8}
           mb={16}
         >
           <Heading letterSpacing="tight" mb={4} as="h2" size="xl">

@@ -80,7 +80,7 @@ export default function Subscribe() {
       my={4}
     >
       <Heading as="h5" size="lg" mb={2}>
-        Subscribe to the newsletter
+        Subscribe to our newsletter
       </Heading>
       <Text>You won't hear from us unless there are significant updates.</Text>
       <InputGroup size="md" mt={4} mb={4}>
@@ -96,7 +96,7 @@ export default function Subscribe() {
           </Button>
         </InputRightElement>
       </InputGroup>
-      <Text fontSize="md">Current subscribers: {`${subscriberCount || '-'}`}</Text>
+      {/* <Text fontSize="md">Current subscribers: {`${subscriberCount || '-'}`}</Text> */}
     </Box>
   );
 }

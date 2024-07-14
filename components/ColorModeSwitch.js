@@ -10,6 +10,8 @@ function useThemeMeta() {
   const icon = isLightMode ? FaMoon : FaSun;
   const checked = !isLightMode;
 
+  const textColor = useColorModeValue("black", "white");
+
   return {
     checked,
     icon: <Icon as={icon} boxSize="5" />,
