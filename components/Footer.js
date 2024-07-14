@@ -35,7 +35,7 @@ const Footer = () => (
           icon={<FiLinkedin />}
         />
       </Link>
-      <Link href="mailto:urajan@ncsu.edu" title="Email" isExternal>
+      <Link href="mailto:upundra@gmail.com" title="Email" isExternal>
         <IconButton
           aria-label="Search database"
           variant="ghost"
